@@ -1,0 +1,1036 @@
+<link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet" />
+
+<!-- Put in head if doesn't work normally -->
+<style>
+  @import url("https://fonts.cdnfonts.com/css/gotham");
+
+   @font-face {
+    font-family: "Wicklow Bold";
+    src: url("Fonts/F37Wicklow-Bold.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Wicklow Medium";
+    src: url("Fonts/F37Wicklow-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Blanka Arabic Regular";
+    src: url("Fonts/F37BlankaArabic-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Blanka Arabic Bold";
+    src: url("Fonts/F37BlankaArabic-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  .menu-t {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu-t-item {
+    padding: 16px;
+    padding-right: 35px;
+    background-color: #ebebeb;
+    color: #4f4b59;
+    cursor: pointer;
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    /* margin-bottom: 5px; */
+  }
+
+  .active-svg {
+    color: #be008c;
+    position: absolute;
+    right: 16px;
+    /* top: -5px; */
+    top: 15px;
+    font-size: 25px;
+    font-weight: 900;
+    display: none;
+  }
+
+  .normal-svg {
+    position: absolute;
+    right: 16px;
+    /* top: -5px; */
+    top: 16px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menu-t-item.active .active-svg {
+    display: block;
+  }
+
+  .menu-t-item.active .normal-svg {
+    display: none;
+  }
+
+  .menu-t-item.active {
+    background-color: #be008c;
+    color: #ffffff;
+  }
+
+  .tab-t {
+    display: none;
+  }
+
+  .tab-t.active {
+    display: block;
+  }
+
+  .tab-t-content {
+    grid-column: 2 / span 3;
+  }
+
+  .main-content-t {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+    gap: 150px;
+
+    margin: 60px 0;
+  }
+
+  .tab-t h2 {
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    color: #be008c;
+  }
+
+  .tab-t p {
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .tab-t hr {
+    border: 1px solid rgba(0, 0, 0, 1);
+    width: 100%;
+  }
+
+  .body-content-t {
+    width: 80%;
+  }
+
+  .table-t {
+    border-collapse: collapse;
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    border: 1px solid lightgray;
+  }
+
+  .table-t th {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #be008c;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+  }
+
+  .table-t td {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-collapse: collapse;
+  }
+
+  .toTopT {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #be008c;
+    padding: 10px;
+
+    border-radius: 50%;
+    /* display: none; */
+    color: #f5f6f8;
+  }
+
+  .banner {
+    /* width: 100%; */
+    height: 400px;
+    background-color: #41001e;
+    background-image: url(img/3x/faqbg@3x.png);
+    background-position: 0%;
+    background-size:  100% auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    padding: 0 200px;
+    margin: 0;
+  }
+.banner h1 {
+    font-family: "Wicklow Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    /* text-indent: -50px; */
+    color: #ffffff;
+    margin: 0;
+    padding-top: 90px
+  }
+/* .banner h1::first-line {
+    text-indent: 0px;
+  } */
+
+  @media screen and (max-width: 1200px) {
+    .main-content-t {
+      gap: 20px;
+    }
+
+    .banner {
+      background-size: auto  100%;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .main-content-t {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .tab-t-content {
+      grid-column: 1;
+
+      padding-top: 20px;
+    }
+
+    .banner {
+      
+      align-items: center;
+
+      background-position: 50%;
+      padding: 0;
+
+      background-size: auto  100%;
+    }
+.banner h1 {
+     
+      font-size: 40px;
+      text-indent: 0px;
+      margin: 0;
+      padding: 20px
+
+    }
+.banner h1::first-line {
+      text-indent: 0px;
+    }
+  }
+</style>
+
+
+<div class="banner">
+    <h1>
+      Frequently <br>
+      asked <br>
+      questions
+    </h1>
+</div>
+
+<!-- Copy content into your platform -->
+<a class="toTopT" href="#top">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+    <style>
+      svg {
+        fill: #ffffff;
+        height: 20px;
+      }
+    </style>
+    <path
+      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+    />
+  </svg>
+</a>
+
+<div class="main-content-t">
+  <!-- Tabs -->
+  <div class="menu-t">
+    <div href="#" class="menu-t-item active" data-tab-t="General">
+      General Queries
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+    <div href="#" class="menu-t-item" data-tab-t="Account">
+      Account
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+    <div href="#" class="menu-t-item" data-tab-t="Enrollment ">
+      Enrollment
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+    <div href="#" class="menu-t-item" data-tab-t="EarnPoints">
+      Earn Points
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+    <div href="#" class="menu-t-item" data-tab-t="RedeemPoints">
+      Redeem Points
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+    <div href="#" class="menu-t-item" data-tab-t="Suggestions">
+      Suggestions
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+
+    <div href="#" class="menu-t-item" data-tab-t="MembershipTiers">
+      Membership Tiers
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+
+    <div href="#" class="menu-t-item" data-tab-t="OtherQuestions">
+      Other Questions
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+
+    <div href="#" class="menu-t-item" data-tab-t="Rewards">
+      Rewards
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="tab-t-content">
+    <div id="General" class="tab-t active">
+      <h2>What is Saudi Rewards?</h2>
+      <div>
+        <p class="body-content-t">
+          Saudi Rewards is Saudi’s newest, completely free, first-of-its-kind
+          national rewards program. You can earn and redeem points on tourism
+          events and curated travel deals through our partners, get exclusive
+          unmatched experiences, and offers such as discounts on shopping,
+          dining, excursions and entertainment.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>
+        How does Saudi Rewards define tourism events, travel purchases and
+        lifestyle purchases?
+      </h2>
+      <div>
+        <p class="body-content-t">
+          A tourism event is an event or initiative done by one of our
+          participating ttourism entities and/or partners. Travel purchases
+          include journeys and accommodations, while lifestyle purchases include
+          everyday activities, such as shopping and dining.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>What are the benefits of joining Saudi Rewards?</h2>
+      <div>
+        <p class="body-content-t">
+          There are many ways to enjoy Saudi Rewards! It saves you money,
+          inspires you to seek new experiences and rewards you for purchases you
+          would make anyway. Earn and redeem points when you spend on eligible
+          Saudi events, Saudi City Passes and curated experiences and/or
+          excursions. You’ll get exclusive benefits and offers from travel and
+          lifestyle partners as well!
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>How can I check my points balance?</h2>
+      <div>
+        <p class="body-content-t">
+          Your available points balance is viewable at any time, right on your
+          My Account page. Just make sure you’re logged in! Your balance is also
+          available on your Saudi Rewards Membership Digital Card!
+        </p>
+      </div>
+    </div>
+
+    <div id="Account" class="tab-t ">
+      <h2>How can I update my personal information and interests?</h2>
+      <div>
+        <p class="body-content-t">
+          Your Saudi Rewards membership grows with you. As your interests
+          change, or as your personal information needs updating, it’s easy to
+          update your profile, too. Make sure you’re logged in and go to the My
+          Account page to refresh your personal info and interests in just a few
+          clicks.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>What is my Saudi Rewards Membership ID number?</h2>
+      <div>
+        <p class="body-content-t">
+          You’ll be identified by a unique 10-digit Saudi Rewards Membership ID
+          number. To access yours, log in and view your My Account page.
+        </p>
+      </div>
+
+      <hr />
+      <h2>How to download my Digital Card?</h2>
+      <div>
+        <p class="body-content-t">
+          Please be sure to check the Welcome Email that you received after
+          registering for Saudi Rewards and follow the link in the email.
+        </p>
+      </div>
+
+      <hr />
+      <h2>How can I reset my password?</h2>
+      <div>
+        <p class="body-content-t">
+          Resetting your password is easy! Just click on “Forgot Password,” and
+          you will receive an email with further instructions.
+        </p>
+      </div>
+
+      <hr />
+      <h2>How can I change the language on the Saudi Rewards website?</h2>
+      <div>
+        <p class="body-content-t">
+          Hello! Salaam! However you say hello, the Saudi Rewards website can
+          greet you right back. Use the language drop-down menu to select your
+          preferred language.
+        </p>
+      </div>
+
+      <hr />
+      <h2>Can I merge two Saudi Rewards accounts?</h2>
+      <div>
+        <p class="body-content-t">
+          Sorry, but merging two Saudi Rewards accounts is not possible. There
+          can be only one account per mobile number and email address.
+        </p>
+      </div>
+
+      <hr />
+      <h2>How can I close my Saudi Rewards account?</h2>
+      <div>
+        <p class="body-content-t">
+          Don’t go! You’ll miss all the rewarding experiences and valuable
+          benefits and offers. If you still want to close your Saudi Rewards
+          account, contact the Call Center, and an agent can help you with
+          deactivation. Call 930 in Saudi or +966 9200 00890 internationally, or
+          email ask@visitsaudi.com.
+        </p>
+      </div>
+
+      <hr />
+      <h2>
+        What will happen to my outstanding points if I deactivate my Saudi
+        Rewards account?
+      </h2>
+      <div>
+        <p class="body-content-t">
+          You’ve got to stay in it to win it. Once you deactivate your account,
+          your points cannot be used; any active offline or partner vouchers
+          will still be valid but may differ from offer to offer. So, if you
+          plan to deactivate, consider using your points online first. And as
+          always, make sure to check the rules and restrictions of each voucher
+          or partner offer.
+        </p>
+      </div>
+
+      <hr />
+      <h2>What will happen to my voucher if I deactivate my account?</h2>
+      <div>
+        <p class="body-content-t">
+          Unlike points, you can still use vouchers even after you’ve
+          deactivated your account. But make sure you have a copy of the voucher
+          saved somewhere safe — you will not be able to access it with an
+          inactive account.
+        </p>
+      </div>
+
+      <hr />
+      <h2>Why do I need to set up a PIN?</h2>
+      <div>
+        <p class="body-content-t">
+          A PIN is mandatory to help keep your member information secure, to
+          confirm redemptions with partners and linking of your Saudi Rewards
+          accounts on partner websites. Don’t worry about having one for
+          registration, but it is required once a member signs up and visits his
+          or her My Account page for the first time. You can also access a link
+          in the Welcome Email received upon registration to update your PIN.
+        </p>
+      </div>
+
+      <hr />
+      <h2>How do I set up a PIN?</h2>
+      <div>
+        <p class="body-content-t">
+          A PIN can be yours in a few simple steps: <br />
+          (1) Log in to your account. <br />
+          (2) Click on your My Account page.<br />
+          (3) Click “Set PIN.” Enter a four-digit number of your choice and
+          confirm it.
+        </p>
+      </div>
+
+      <hr />
+      <h2>How do I use my PIN?</h2>
+      <div>
+        <p class="body-content-t">
+          A PIN is required by select Saudi Rewards partners to help verify your
+          identity. When completing a transaction with one of those partners,
+          enter your four-digit PIN. This is required to complete the
+          redemption.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="Enrollment " class="tab-t ">
+      <h2>How do I join Saudi Rewards?</h2>
+      <div>
+        <p class="body-content-t">
+          We thought you’d never ask! We’re happy to welcome new Saudi Rewards
+          members. Visit the homepage and follow the steps to sign up.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>Can I only register with a Saudi mobile number?</h2>
+      <div>
+        <p class="body-content-t">
+          No! All mobile numbers are welcome. Register with a Saudi mobile
+          number or an international number.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="EarnPoints" class="tab-t ">
+      <h2>When do I start earning points?</h2>
+      <div>
+        <p class="body-content-t">
+          Points are closer than you think. As soon as you’re registered with
+          Saudi Rewards, you can start earning points when you spend on eligible
+          tourism events or purchase of Saudi City Passes
+        </p>
+      </div>
+
+      <hr />
+      <h2>How can I earn points?</h2>
+      <div>
+        <p class="body-content-t">
+          Simple! You can earn points from spending on eligible tourism events.
+          Get more details from the Rewards section on the Saudi Rewards
+          website.
+        </p>
+      </div>
+
+      <hr />
+      <h2>How long does it take for my account to reflect my new points?</h2>
+      <div>
+        <p class="body-content-t">
+          Every Saudi Rewards partner is different. The time it takes for the
+          points you’ve earned to show up in your account will vary depending on
+          the partner and transaction type. Some partners may take up to 30
+          days. If you have any concerns, contact the Call Center and share your
+          mobile number and transaction details with an agent so they can advise
+          you on the rules and timeline of your specific transaction. Call 930
+          in Saudi or +966 9200 00890 for international callers, or email
+          ask@visitsaudi.com.
+        </p>
+      </div>
+
+      <hr />
+      <h2>Who are the Saudi Rewards partners?</h2>
+      <div>
+        <p class="body-content-t">
+          As a Saudi Rewards member, you’re in good company. View all
+          participating partners and offers on the Rewards page . Who knows —
+          taking a look at your options might even inspire you to try something
+          new!
+        </p>
+      </div>
+
+      <hr />
+      <h2>How long are my points valid?</h2>
+      <div>
+        <p class="body-content-t">
+          Points are valid for different amounts of time, depending on your
+          Saudi Rewards tier. To find out more, visit the Membership Tiers page
+          .
+        </p>
+      </div>
+
+      <hr />
+      <h2>Can I buy points with cash?</h2>
+      <div>
+        <p class="body-content-t">
+          Some things money can’t buy — like points, which are not available for
+          purchase.
+        </p>
+      </div>
+
+      <hr />
+      <h2>What is my earned, redeemed and expired points balance?</h2>
+      <div>
+        <p class="body-content-t">
+          Your points balance is viewable at any time on your My Account page,
+          and you’ll be emailed a statement monthly.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="RedeemPoints" class="tab-t ">
+      <h2>Who are Saudi Rewards redemption partners?</h2>
+      <div>
+        <p class="body-content-t">
+          Saudi Rewards redemption partners are so special, we can’t tell you
+          about them here. But visit the Rewards pag e, and you can explore them
+          all.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>Do you have any other redemption partners?</h2>
+      <div>
+        <p class="body-content-t">
+          All redemption partners are listed on the Rewards page . Check it out
+          to explore all of your redemption options.
+        </p>
+      </div>
+
+      <hr />
+      <h2>
+        What if I redeemed my points for a voucher, but now I would like to
+        cancel it?
+      </h2>
+      <div>
+        <p class="body-content-t">
+          Unfortunately, claimed vouchers are not refundable and may not be
+          canceled. Be sure to check each redemption offer as usage rules and
+          restrictions may differ depending on the reward.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>
+        Can I redeem points at the partner store, or must redemption be done
+        within the Saudi Rewards website?
+      </h2>
+      <div>
+        <p class="body-content-t">
+          Points can be redeemed right here on the Saudi Rewards website.
+          Rewards, including Vouchers can be used in stores, online or both.
+          Please check your reward details to determine the right option for
+          you.
+        </p>
+      </div>
+
+      <hr />
+      <h2>Do I need a minimum points balance to be able to redeem?</h2>
+      <div>
+        <p class="body-content-t">
+          There are no minimum points balance requirements. But when selecting a
+          reward, please be sure you have enough points available to redeem.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="Suggestions" class="tab-t ">
+      <h2>How can I share suggestions with the Saudi Rewards team?</h2>
+      <div>
+        <p class="body-content-t">
+          We’re here, and we’re listening! If you want to tell us how much
+          you’re enjoying Saudi Rewards, or if you have any amazing ideas about
+          what we could do more of — or do better — email ask@visitsaudi.com or
+          call us at 930 in Saudi (+966 9200 00890 for international callers).
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="MembershipTiers" class="tab-t ">
+      <h2>What are the different tiers in Saudi Rewards?</h2>
+      <div>
+        <p class="body-content-t">
+          Saudi Rewards has four tiers: Silver, Gold, Platinum and Black. Want
+          to make it all the way to Black? The more you spend with eligible
+          tourism partners, curated experiences offered by our partners, or
+          Saudi City Passes , the higher status you’ll earn — and the more
+          member benefits you’ll receive! For more information, visit the
+          Membership Tiers page .
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>What are the benefits of each tier level?</h2>
+      <div>
+        <p class="body-content-t">
+          You’ll love the points benefits of Saudi Rewards at the Silver
+          Membership Tier, and they only get better from there. Visit the
+          Membership Tiers pag e to learn more about the benefits of being a
+          Silver, Gold, Platinum or Black Member.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>Can my tier level be downgraded?</h2>
+      <div>
+        <p class="body-content-t">
+          Gold, Platinum and Black Members can be downgraded, but great news!
+          You will never be downgraded more than one tier status. Further, as
+          long as you keep spending at your tier’s threshold with eligible
+          tourism partners, curated experiences offered by our partners, or
+          Saudi City Passes , you can maintain your tier and benefits.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>What happens to my points if my tier level is downgraded?</h2>
+      <div>
+        <p class="body-content-t">
+          If your tier level has been downgraded, don’t worry — your points will
+          remain active until their expiration date. But that doesn’t mean you
+          should stop earning to upgrade your tier again. Tier status is
+          maintained for one year.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="OtherQuestions" class="tab-t ">
+      <h2>I’m having an issue that isn’t covered in the FAQs. Can you help?</h2>
+      <div>
+        <p class="body-content-t">
+          For any questions that we still haven’t answered, or to troubleshoot
+          specific issues, please contact the Call Center by phone at 930 in
+          Saudi or +966 9200 00890 internationally, or email at
+          ask@visitsaudi.com.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="Rewards" class="tab-t ">
+      <h2>What is the Rewards page?</h2>
+      <div>
+        <p class="body-content-t">
+          The Rewards page is your first stop to start exploring your rewards
+          and to see the exclusive offerings and benefits available to you.
+        </p>
+      </div>
+
+      <hr />
+      <h2>How do I earn points?</h2>
+      <div>
+        <p class="body-content-t">
+          Easily earn points when you engage in Saudi Rewards tourism partner
+          activities, such as eligible event bookings, Saudi City Pass purchases
+          and curated travel experiences.
+        </p>
+      </div>
+
+      <hr />
+      <h2>How do I redeem points?</h2>
+      <div>
+        <p class="body-content-t">
+          You can redeem points in more ways than one. Select from a menu of
+          options on your Saudi Rewards account to apply points toward eligible
+          event tickets, curated experiences and Saudi City Passes.
+        </p>
+      </div>
+
+      <hr />
+      <h2>What are offers?</h2>
+      <div>
+        <p class="body-content-t">
+          Enjoy exclusive rewards, extras and promotions from program partners
+          on dining, car rentals, entertainment and so much more.
+        </p>
+      </div>
+
+      <hr />
+      <h2>What are benefits?</h2>
+      <div>
+        <p class="body-content-t">
+          Benefits are exclusively to Saudi Rewards members with access to
+          additional benefits based on your tier status. Benefits include
+          exclusive deals and experiences for eligible events, Saudi City Passes
+          and curated experiences – making your Saudi Rewards adventures like no
+          other.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+  </div>
+
+
+  <!-- <h2></h2>
+      <div>
+        <p class="body-content-t">
+        </p>
+        
+      </div>
+
+      <hr> -->
+
+  <!-- Keep this below, if it doesn't work then move to head -->
+  <script>
+    // Get all menu-t items
+    const menuItems = document.querySelectorAll(".menu-t-item");
+
+    // Get all tab-ts
+    const tabs = document.querySelectorAll(".tab-t");
+
+    // Loop through each menu-t item
+    menuItems.forEach((menuItem) => {
+      // Add click event listener to menu-t item
+      menuItem.addEventListener("click", (e) => {
+        // Prevent default link behavior
+        e.preventDefault();
+
+        // Get the data-tab-t attribute value of the clicked menu-t item
+        const tabId = e.target.getAttribute("data-tab-t");
+
+        // Remove active class from all menu-t items and tab-ts
+        menuItems.forEach((menuItem) => {
+          menuItem.classList.remove("active");
+        });
+
+        tabs.forEach((tab) => {
+          tab.classList.remove("active");
+        });
+
+        // Add active class to clicked menu-t item and corresponding tab-t
+        e.target.classList.add("active");
+        document.getElementById(tabId).classList.add("active");
+      });
+    });
+  </script>
+</div>
