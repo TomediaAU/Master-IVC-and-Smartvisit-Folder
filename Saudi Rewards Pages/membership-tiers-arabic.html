@@ -1,0 +1,2520 @@
+<link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet" />
+
+<!-- Put in head if doesn't work normally -->
+<style>
+  @import url("https://fonts.cdnfonts.com/css/gotham");
+  /* displace2.0-reg.otf */
+  @font-face {
+    font-family: "Displace Medium";
+    src: url("displace2.0-medium.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Wicklow Bold";
+    src: url("Fonts/F37Wicklow-Bold.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Wicklow Medium";
+    src: url("Fonts/F37Wicklow-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Blanka Arabic Regular";
+    src: url("Fonts/F37BlankaArabic-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Blanka Arabic Bold";
+    src: url("Fonts/F37BlankaArabic-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .articles__wrapper {
+      /* padding-top: 60px; */ 
+      /* padding-bottom: 60px; */ 
+      min-height: 300px; 
+      max-width: 100%!important; 
+      padding-left: 0!important; 
+      padding-right: 0!important; 
+  }
+
+
+  .main-content-t {
+    /* padding: 16px; */
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense; */
+    gap: 150px;
+  }
+
+  .main-content-t h2 {
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34pt;
+    /* line-height: 22px; */
+    color: #002846;
+    margin: 0;
+  }
+
+  .main-content-t p {
+    font-family: "Blanka Arabic Regular";
+    font-style: bold;
+    font-weight: 400;
+    font-size: 24pt;
+    line-height: 140%;
+    color: #002846;
+  }
+
+  .main-content-t hr {
+    border: 2px solid rgba(185, 185, 185, 0.2);
+    width: 70%;
+  }
+
+  .container-t {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-top: 20px;
+  }
+
+  .membership-tier-t-card-t {
+    width: 300px;
+    height: auto;
+  }
+
+  .membership-tier-t-card-t p {
+    padding: 0;
+    margin: 0;
+  }
+  .membership-tier-t-card-t .card-t {
+    width: 100%;
+  }
+
+  .membership-tier-t-card-t .card-t svg {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-section-5-t {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about-section-5-t h2 {
+    text-align: center;
+  }
+
+  /* TABLE */
+  .table-t table {
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 40px;
+    font-family: "Blanka Arabic Regular";
+    font-size: 17pt;
+    font-weight: 500;
+    table-layout: fixed;
+    min-width: 1000px;
+  }
+
+  .table-t {
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+  }
+
+  .main-table-holder {
+    background-image: url("https://image.iventurecard.com/images/static/static-greypattern@3x-28112023151406.png");
+    background-position: 0%;
+    background-size: 100% auto;
+    padding: 100px 0;
+  }
+
+  .table-t table thead th:nth-child(1) {
+    width: 40%;
+    text-align: left;
+  }
+
+  .table-t table tbody td:nth-child(1) {
+    text-align: left;
+
+    font-family: "Blanka Arabic Regular";
+    font-size: 18pt;
+    font-weight: 700;
+
+    text-align: left;
+  }
+
+  .table-t table tbody td:nth-last-child(5) {
+    text-align: left;
+
+    font-family: "Blanka Arabic Regular";
+    font-size: 18pt;
+    font-weight: 700;
+
+    text-align: left;
+  }
+
+  .table-t table tbody td {
+    border-bottom: 1px solid #000;
+  }
+
+  .table-t table tbody td:nth-last-child(4) {
+    background-color: #a6a9aa;
+    color: white;
+    border: 1px solid #fff;
+  }
+
+  .table-t table tbody td:nth-last-child(3) {
+    background-color: #b49164;
+    color: white;
+    border: 1px solid #fff;
+  }
+
+  .table-t table tbody td:nth-last-child(2) {
+    background-color: #787d82;
+    color: white;
+    border: 1px solid #fff;
+  }
+
+  .table-t table tbody td:nth-last-child(1) {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #fff;
+  }
+
+  .table-t h2 {
+    text-align: left;
+  }
+
+  .table-t h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #46c8a0;
+    margin-top: 10px;
+  }
+
+  /* .table-t table svg {
+    width: 20px;
+  } */
+
+  /* .table-t table tbody tr:nth-child(even) {
+    background-color: #f5f6f8;
+  } */
+
+  .table-t .header-row td {
+    background-color: #46c8a0 !important;
+    font-size: 24pt;
+  }
+
+  .table-t table th {
+    padding: 26px;
+    text-align: center;
+  }
+
+  .table-t table td {
+    padding: 10px 26px;
+    text-align: center;
+  }
+
+  .table-t {
+    /* width: 90%;  */
+    /* padding: 20px; */
+    /* margin-top: 40px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-x: auto;
+    min-width: 320px;
+
+    margin-top: 50px;
+  }
+
+  .table-t table {
+    width: 100%;
+  }
+
+  .membership-tier-t {
+    color: white;
+    background-color: #1c3b5b;
+  }
+
+  .bronze-t {
+    color: white;
+    background-color: #b77720;
+  }
+
+  .silver-t {
+    color: white;
+    background-color: #b8b8b8;
+  }
+
+  .gold-t {
+    color: white;
+    background-color: #ddb544;
+  }
+
+  .table-t table thead {
+    font-family: "Blanka Arabic Regular";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .banner {
+    /* width: 100%; */
+    /* height: 400px; */
+    background-color: #41001e;
+    background-image: url("https://image.iventurecard.com/images/static/static-membershiptierbg@3x-(large)-28112023151551.png");
+    background-position: 0%;
+    background-size: 100% auto;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; */
+
+    padding: 200px 200px;
+    margin: 0;
+  }
+  .banner h1 {
+    font-family: "Wicklow Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90pt;
+    /* text-indent: -50px; */
+    color: #ffffff;
+    margin: 0;
+    /* padding-top: 90px; */
+  }
+  .banner h1::first-line {
+    text-indent: 0px;
+  }
+
+  .about-section-1 .body-content {
+    width: 80%;
+  }
+
+  .about-section-1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* background-color: #ebebeb; */
+  }
+
+  .how-to-join-section {
+    background-color: #ebebeb;
+    position: relative;
+    padding: 80px;
+    /* background-image: url("img/pattern.png"); */
+    /* background-position: 0%; */
+    background-size: auto 99%;
+    background-repeat: repeat-x;
+  }
+
+  .how-to-join-section::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    top: -50px;
+    left: 0;
+    background-color: #ebebeb;
+    z-index: 1;
+  }
+
+  .how-to-join-section::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    bottom: -50px;
+    right: 0;
+    background-color: #ebebeb;
+    z-index: 1;
+  }
+
+  .how-to-join-section h2 {
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    background-color: #ebebeb;
+    width: fit-content;
+    padding: 15px;
+    /* margin: 0 auto; */
+  }
+
+  .how-to-join-section p {
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 500px;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    background-color: #ebebeb;
+    width: fit-content;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .container-t {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-top: 20px;
+  }
+
+  .membership-tier-card {
+    width: 300px;
+    height: auto;
+  }
+
+  .membership-tier-card p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .membership-tier-card .card-t {
+    /* width: 100%; */
+    margin: auto;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .membership-tier-card .card-t svg {
+    /* width: 100%; */
+    height: 30px;
+    margin: auto;
+  }
+
+  .how-to-join-section {
+    padding-top: 60px;
+    padding-bottom: 160px;
+  }
+
+  .how-to-join-section .membership-holder {
+    width: 100%;
+    margin: auto;
+  }
+
+  .how-to-join-section h2 {
+    text-align: left;
+  }
+
+  .how-to-join-section h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #64a0dc;
+    margin-top: 10px;
+  }
+
+  .table-t table th svg {
+    max-height: 30px;
+  }
+
+  .Silvercls-1 {
+    fill: none;
+  }
+
+  .Silvercls-1,
+  .Silvercls-2 {
+    stroke-width: 0px;
+  }
+
+  .Silvercls-3 {
+    clip-path: url(#clippath-1);
+  }
+
+  .Silvercls-2 {
+    fill: #a6a9aa;
+  }
+
+  .Silvercls-4 {
+    clip-path: url(#clippath);
+  }
+  .goldcls-1 {
+    fill: #b49164;
+    stroke-width: 0px;
+  }
+  .platcls-1 {
+    fill: #787d82;
+    stroke-width: 0px;
+  }
+  .Blackcls-1,
+  .Blackcls-2 {
+    stroke-width: 0px;
+  }
+
+  .Blackcls-2 {
+    fill: none;
+  }
+
+  .Blackcls-3 {
+    clip-path: url(#clippath-1);
+  }
+
+  .Blackcls-4 {
+    clip-path: url(#clippath);
+  }
+  .Silvercls-1 {
+    fill: none;
+  }
+
+  .Silvercls-1,
+  .Silvercls-2 {
+    stroke-width: 0px;
+  }
+
+  .Silvercls-3 {
+    clip-path: url(#clippath-1);
+  }
+
+  .Silvercls-2 {
+    fill: #a6a9aa;
+  }
+
+  .Silvercls-4 {
+    clip-path: url(#clippath);
+  }
+  .goldcls-1 {
+    fill: #b49164;
+    stroke-width: 0px;
+  }
+  .platcls-1 {
+    fill: #787d82;
+    stroke-width: 0px;
+  }
+  .Blackcls-1,
+  .Blackcls-2 {
+    stroke-width: 0px;
+  }
+
+  .Blackcls-2 {
+    fill: none;
+  }
+
+  .Blackcls-3 {
+    clip-path: url(#clippath-1);
+  }
+
+  .Blackcls-4 {
+    clip-path: url(#clippath);
+  }
+  .cls-1 {
+    fill: #fff;
+    stroke-width: 0px;
+  }
+  .MEMBERSHIP_KEY_POINTS-1 {
+    fill: #fa783c;
+    stroke-width: 0px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .main-table-holder {
+      padding: 50px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    /* .main-content-t {
+      gap: 20px;
+    } */
+
+    .table-t {
+      width: 100%;
+      margin-top: 40px;
+
+      display: block;
+      align-items: center;
+      overflow-x: auto;
+      min-width: 320px;
+    }
+
+    .banner {
+      background-size: auto 100%;
+    }
+
+    .main-table-holder {
+      padding: 5px;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    /* .main-content-t {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .tab-content {
+      grid-column: 1;
+    } */
+
+    .banner {
+      align-items: center;
+
+      background-position: 50%;
+      padding: 0;
+
+      background-size: auto 100%;
+    }
+    .banner h1 {
+      font-size: 40px;
+      text-indent: 0px;
+      margin: 0;
+      padding: 20px;
+    }
+    .banner h1::first-line {
+      text-indent: 0px;
+    }
+
+    .how-to-join-section {
+      padding: 100px 0;
+    }
+
+    .about-section-1 .body-content {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+  }
+</style>
+
+<!-- Copy content into your platform -->
+<div class="main-content-t">
+  <!-- <div class="banner">
+    <h1>
+      Membership <br />
+      tiers
+    </h1>
+  </div> -->
+
+  <div class="about-section-1">
+    <div class="body-content">
+      <svg
+        id="MEMBERSHIP_KEY_POINTS"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 92.31 48"
+        width="70px"
+      >
+        <defs>
+          <style>
+            .MEMBERSHIP_KEY_POINTS-1 {
+              fill: #fa783c;
+              stroke-width: 0px;
+            }
+          </style>
+        </defs>
+        <polygon
+          class="MEMBERSHIP_KEY_POINTS-1"
+          points="62.41 31.38 78.46 15.69 46.38 15.69 62.54 0 29.77 0 45.92 15.69 13.85 15.69 29.9 31.38 0 31.38 17.07 48 75.24 48 92.31 31.38 62.41 31.38"
+        />
+      </svg>
+
+      <p>
+        Rewards from day one. Free membership. No fees, minimum spending
+        threshold or daily spending limit — and that’s just the starting tier of
+        Saudi Rewards. Members in all tiers can access “money can’t buy”
+        experiences, ticket discounts for eligible events, exclusive offers and
+        deal from travel and lifestyle partners, and a never-ending stream of
+        exciting rewards.
+        <br /><br />
+        It only gets better with every tier.
+      </p>
+      <p style="color: #fa783c"><b>Go more, get more.</b></p>
+    </div>
+  </div>
+
+  <div class="how-to-join-section">
+    <div class="membership-holder">
+      <h2>Membership Tiers</h2>
+
+      <div class="container-t">
+        <!-- Bronze -->
+        <div class="membership-tier-card">
+          <div class="card-t">
+            <svg
+              id="ABOUT_MEMBERSHIP_TIERS"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 165.18 31.58"
+            >
+              <defs>
+                <style>
+                  .Silvercls-1 {
+                    fill: none;
+                  }
+
+                  .Silvercls-1,
+                  .Silvercls-2 {
+                    stroke-width: 0px;
+                  }
+
+                  .Silvercls-3 {
+                    clip-path: url(#clippath-1);
+                  }
+
+                  .Silvercls-2 {
+                    fill: #a6a9aa;
+                  }
+
+                  .Silvercls-4 {
+                    clip-path: url(#clippath);
+                  }
+                </style>
+                <clipPath id="clippath">
+                  <rect
+                    class="Silvercls-1"
+                    x="0"
+                    width="165.18"
+                    height="31.58"
+                  />
+                </clipPath>
+                <clipPath id="clippath-1">
+                  <rect
+                    class="Silvercls-1"
+                    x="-17.35"
+                    y="-17.35"
+                    width="199.88"
+                    height="66.28"
+                  />
+                </clipPath>
+              </defs>
+              <g class="Silvercls-4">
+                <g class="Silvercls-3">
+                  <path
+                    class="Silvercls-2"
+                    d="m13.16,13.37l-3.29-.9c-1.51-.4-2.59-.87-3.23-1.43-.64-.56-.96-1.3-.96-2.24,0-1.02.37-1.84,1.11-2.46.74-.61,1.75-.92,3.04-.92,1.54,0,2.76.38,3.68,1.15.91.77,1.41,1.85,1.5,3.25l4.7-.38c0-1.65-.4-3.11-1.2-4.38-.8-1.27-1.92-2.25-3.35-2.95-1.44-.7-3.1-1.05-4.98-1.05-2.91,0-5.21.73-6.92,2.18-1.71,1.45-2.56,3.43-2.56,5.94,0,2.02.59,3.64,1.77,4.85,1.18,1.21,2.91,2.13,5.19,2.76l3.29.9c1.54.43,2.64.95,3.31,1.58.67.63,1,1.41,1,2.35,0,1.2-.41,2.12-1.24,2.76-.83.64-2.01.96-3.55.96-1.82,0-3.24-.45-4.25-1.35-1.01-.9-1.56-2.13-1.65-3.7L0,20.68c.14,2.96,1.1,5.21,2.86,6.73,1.77,1.52,4.24,2.29,7.44,2.29s5.51-.7,7.31-2.11c1.79-1.41,2.69-3.46,2.69-6.13,0-2.19-.61-3.93-1.82-5.21-1.21-1.28-2.98-2.24-5.32-2.86m18.71,15.69h5V1.71h-5v27.35ZM55.63,1.71h-5v27.35h17.35v-4.19h-12.35V1.71Zm59.86,27.35h18.21v-4.19h-13.21v-7.61h11.5v-4.02h-11.5v-7.35h13.21V1.71h-18.21v27.35Zm42.08-11.63c1.71-.54,3.08-1.49,4.12-2.84,1.04-1.35,1.56-2.96,1.56-4.81,0-1.6-.39-3.01-1.16-4.23-.77-1.22-1.82-2.17-3.14-2.84-1.32-.67-2.78-1-4.38-1h-10.56v27.35h5v-11.2h3.38l7.01,11.2h5.77l-7.61-11.63Zm-3.89-3.42h-4.66V5.72h4.66c1.37,0,2.45.37,3.25,1.11.8.74,1.2,1.75,1.2,3.03s-.4,2.29-1.2,3.04c-.8.74-1.88,1.11-3.25,1.11m-66.69,17.56l7.13-10.53h-14.25l7.13,10.53ZM94.12,0h-14.25l7.13,10.53,7.13-10.53Zm0,21.05l7.12-10.53h-14.25l7.13,10.53Zm7.12-10.53l7.13-10.53h-14.25l7.12,10.53Zm-28.5,0l7.12,10.53,7.13-10.53h-14.25Zm-7.13-10.53l7.13,10.53,7.12-10.53h-14.25Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <p>
+            Start at Silver and earn points, benefits and offers from the moment
+            you sign up. It’s free to join and only gets better the further you
+            go.
+          </p>
+        </div>
+        <div class="membership-tier-card">
+          <div class="card-t">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg
+              id="Artwork"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 158.74 43.37"
+            >
+              <defs>
+                <style>
+                  .goldcls-1 {
+                    fill: #b49164;
+                    stroke-width: 0px;
+                  }
+                </style>
+              </defs>
+              <path
+                class="goldcls-1"
+                d="m105.4,5.73h-5.84v31.92h20.25v-4.89h-14.41V5.73ZM18,24.38h8.73c-.23,2.83-1.28,5.02-3.14,6.58-1.86,1.56-4.24,2.34-7.13,2.34-2.06,0-3.88-.48-5.46-1.45-1.58-.96-2.8-2.32-3.67-4.06-.86-1.75-1.3-3.78-1.3-6.11s.43-4.32,1.3-6.08c.86-1.76,2.07-3.13,3.62-4.09,1.55-.96,3.3-1.45,5.26-1.45,2.06,0,3.87.5,5.44,1.5,1.56,1,2.66,2.36,3.29,4.09l6.03-.5c-1.36-3.59-3.24-6.18-5.63-7.78-2.39-1.6-5.44-2.39-9.13-2.39-3.09,0-5.88.73-8.35,2.19-2.48,1.46-4.41,3.47-5.78,6.03-1.38,2.56-2.07,5.42-2.07,8.58s.66,5.94,1.97,8.45c1.31,2.51,3.2,4.5,5.66,5.96,2.46,1.46,5.35,2.19,8.68,2.19s5.98-.66,8.35-1.97c2.38-1.31,4.21-3.15,5.49-5.51,1.28-2.36,1.92-5.07,1.92-8.13v-3.09h-14.06v4.69Zm138.62-11.02c-1.41-2.43-3.4-4.31-5.96-5.63-2.56-1.33-5.48-2-8.78-2h-11.62v31.92h11.62c3.29,0,6.22-.67,8.78-2.02,2.56-1.35,4.55-3.22,5.96-5.64,1.41-2.41,2.12-5.18,2.12-8.3s-.71-5.9-2.12-8.33Zm-6.83,16.46c-1.91,1.96-4.55,2.94-7.9,2.94h-5.78V10.61h5.78c3.36,0,5.99.98,7.9,2.94,1.91,1.96,2.87,4.67,2.87,8.13s-.96,6.17-2.87,8.13Zm-106.34-.9l7.52-7.23-7.52-7.23v14.46Zm45.1,0v-14.46l-7.52,7.23,7.52,7.23Zm-15.03-14.46V0l-7.52,7.23-7.52-7.23v14.46l-7.52-7.23v28.91l7.52-7.23v14.46l7.52-7.23,7.52,7.23v-14.46l7.52,7.23V7.23l-7.52,7.23Z"
+              />
+            </svg>
+          </div>
+
+          <p>
+            Advance to Gold once you spend SAR 25,000 on eligible purchases. At
+            this level, you’ll earn 1.5 Saudi points for every SAR1 spent, and
+            your points remain valid for 24 Months.
+          </p>
+        </div>
+        <div class="membership-tier-card">
+          <div class="card-t">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg
+              id="Artwork"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 283.46 37.98"
+            >
+              <defs>
+                <style>
+                  .platcls-1 {
+                    fill: #787d82;
+                    stroke-width: 0px;
+                  }
+                </style>
+              </defs>
+              <path
+                class="platcls-1"
+                d="m40.54,3.03h-5.84v31.92h20.25v-4.89h-14.41V3.03Zm-22.97,1.27c-1.68-.85-3.58-1.27-5.71-1.27H0v31.92h5.84v-11.87h6.03c2.13,0,4.03-.42,5.71-1.27,1.68-.85,2.99-2.03,3.94-3.54.95-1.51,1.42-3.25,1.42-5.21s-.47-3.7-1.42-5.21c-.95-1.51-2.26-2.69-3.94-3.54Zm-2.12,12.67c-1,.95-2.39,1.42-4.19,1.42h-5.44V7.72h5.44c1.8,0,3.19.47,4.19,1.42,1,.95,1.5,2.25,1.5,3.91s-.5,2.97-1.5,3.91ZM76.84,3.03l-12.22,31.92h5.63l3.04-8.18h13.86l3.04,8.18h6.29l-12.17-31.92h-7.48Zm-1.8,19.05l5.24-13.96,5.19,13.96h-10.42Zm27.02-14.16h9.38v27.03h5.84V7.92h9.38V3.03h-24.59v4.89Zm37.24,27.03h5.84V3.03h-5.84v31.92Zm41.48-9.18l-14.71-22.74h-5.93v31.92h5.84V12.26l14.66,22.69h5.98V3.03h-5.83v22.74ZM275.19,3.03l-9.23,25.93-9.13-25.93h-8.33v31.92h5.69V11.31l8.33,23.64h6.88l8.38-23.64v23.64h5.69V3.03h-8.28ZM207.26,0l-10.31,6.33,10.31,6.33,10.31-6.33-10.31-6.33Zm0,12.66l-10.31,6.33,10.31,6.33,10.31-6.33-10.31-6.33Zm-10.31,18.99l10.31,6.33,10.31-6.33-10.31-6.33-10.31,6.33ZM227.87,0l-10.31,6.33,10.31,6.33,10.31-6.33-10.31-6.33Zm0,25.32l10.31-6.33-10.31-6.33-10.31,6.33,10.31,6.33Zm0,12.66l10.31-6.33-10.31-6.33-10.31,6.33,10.31,6.33Z"
+              />
+            </svg>
+          </div>
+
+          <p>
+            Reach Platinum once you spend SAR 50,000 on eligible purchases. At
+            this level, you’ll earn 2 Saudi points for every SAR1 spent, and
+            your points remain valid for 30 Months.
+          </p>
+        </div>
+        <div class="membership-tier-card">
+          <div class="card-t">
+            <svg
+              id="Isolation_Mode"
+              data-name="Isolation Mode"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 161.53 28.66"
+            >
+              <defs>
+                <style>
+                  .Blackcls-1,
+                  .Blackcls-2 {
+                    stroke-width: 0px;
+                  }
+
+                  .Blackcls-2 {
+                    fill: none;
+                  }
+
+                  .Blackcls-3 {
+                    clip-path: url(#clippath-1);
+                  }
+
+                  .Blackcls-4 {
+                    clip-path: url(#clippath);
+                  }
+                </style>
+                <clipPath id="clippath">
+                  <rect
+                    class="Blackcls-2"
+                    x="0"
+                    y="0"
+                    width="161.53"
+                    height="28.66"
+                  />
+                </clipPath>
+                <clipPath id="clippath-1">
+                  <rect
+                    class="Blackcls-2"
+                    x="-17.35"
+                    y="-17.35"
+                    width="196.24"
+                    height="63.37"
+                  />
+                </clipPath>
+              </defs>
+              <g class="Blackcls-4">
+                <g class="Blackcls-3">
+                  <path
+                    class="Blackcls-1"
+                    d="m72.8.66h-14.45v27.35h4.82v-6.84h4.82v-6.84h4.82v-6.84h4.82v6.84h4.82v6.84h4.82v6.84h4.82V.66h-19.27ZM15.43,13.56c1.11-.6,1.99-1.43,2.63-2.48.64-1.05.96-2.22.96-3.5s-.34-2.49-1.03-3.55c-.68-1.05-1.63-1.88-2.84-2.48-1.21-.6-2.56-.9-4.04-.9H0v27.35h11.37c2.79,0,4.98-.67,6.56-2.01s2.37-3.16,2.37-5.47c0-1.71-.44-3.16-1.32-4.34-.88-1.18-2.07-2.06-3.55-2.63M5,4.59h5.17c1.17,0,2.09.33,2.78.98.68.66,1.03,1.54,1.03,2.65s-.34,1.95-1.03,2.61c-.68.66-1.61.98-2.78.98h-5.17v-7.22Zm5.47,19.49h-5.47v-8.42h5.73c1.37,0,2.45.37,3.25,1.11.8.74,1.2,1.77,1.2,3.08,0,2.82-1.57,4.23-4.7,4.23M36.79.66h-5v27.35h17.35v-4.19h-12.35V.66Zm82.75,22.08c-1.4,1.04-3.05,1.56-4.96,1.56-1.71,0-3.23-.42-4.56-1.26-1.33-.84-2.35-2.02-3.08-3.53-.73-1.51-1.09-3.24-1.09-5.18s.36-3.66,1.09-5.18c.73-1.51,1.75-2.69,3.08-3.53,1.33-.84,2.84-1.26,4.56-1.26,1.88,0,3.52.52,4.92,1.56,1.4,1.04,2.37,2.47,2.91,4.3l4.92-.38c-.37-1.97-1.14-3.69-2.31-5.18-1.17-1.48-2.64-2.63-4.41-3.44C118.84.41,116.9,0,114.79,0,112.11,0,109.7.62,107.54,1.86c-2.15,1.24-3.84,2.95-5.05,5.13-1.21,2.18-1.82,4.63-1.82,7.34s.6,5.16,1.82,7.34c1.21,2.18,2.89,3.89,5.05,5.13,2.15,1.24,4.57,1.86,7.25,1.86,3.14,0,5.85-.87,8.13-2.61,2.28-1.74,3.76-4.08,4.45-7.02l-4.92-.6c-.54,1.83-1.51,3.26-2.91,4.3m30.11-10.71l11.41-11.37h-5.85l-12.44,12.52V.66h-5v27.35h5v-9.57l3.25-3.12,9.45,12.69h6.07l-11.88-15.98Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <p>
+            Achieve Black status once you spend SAR 250,000 on eligible
+            purchases. At this elite level, you’ll earn 3 Saudi points for every
+            SAR1 spent, and your points remain valid for 36 Months.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-table-holder">
+    <div class="table-t">
+      <h2>How it works</h2>
+
+      <table>
+        <tbody>
+          <tr>
+            <td class="" colspan="2"></td>
+            <td class="" style="background-color: white; padding: 20px 0;">
+              <svg
+                id="ABOUT_MEMBERSHIP_TIERS"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 165.18 31.58"
+                height="20"
+              >
+                <defs>
+                  <style>
+                    .Silvercls-1 {
+                      fill: none;
+                    }
+
+                    .Silvercls-1,
+                    .Silvercls-2 {
+                      stroke-width: 0px;
+                    }
+
+                    .Silvercls-3 {
+                      clip-path: url(#clippath-1);
+                    }
+
+                    .Silvercls-2 {
+                      fill: #a6a9aa;
+                    }
+
+                    .Silvercls-4 {
+                      clip-path: url(#clippath);
+                    }
+                  </style>
+                  <clipPath id="clippath">
+                    <rect
+                      class="Silvercls-1"
+                      x="0"
+                      width="165.18"
+                      height="31.58"
+                    />
+                  </clipPath>
+                  <clipPath id="clippath-1">
+                    <rect
+                      class="Silvercls-1"
+                      x="-17.35"
+                      y="-17.35"
+                      width="199.88"
+                      height="66.28"
+                    />
+                  </clipPath>
+                </defs>
+                <g class="Silvercls-4">
+                  <g class="Silvercls-3">
+                    <path
+                      class="Silvercls-2"
+                      d="m13.16,13.37l-3.29-.9c-1.51-.4-2.59-.87-3.23-1.43-.64-.56-.96-1.3-.96-2.24,0-1.02.37-1.84,1.11-2.46.74-.61,1.75-.92,3.04-.92,1.54,0,2.76.38,3.68,1.15.91.77,1.41,1.85,1.5,3.25l4.7-.38c0-1.65-.4-3.11-1.2-4.38-.8-1.27-1.92-2.25-3.35-2.95-1.44-.7-3.1-1.05-4.98-1.05-2.91,0-5.21.73-6.92,2.18-1.71,1.45-2.56,3.43-2.56,5.94,0,2.02.59,3.64,1.77,4.85,1.18,1.21,2.91,2.13,5.19,2.76l3.29.9c1.54.43,2.64.95,3.31,1.58.67.63,1,1.41,1,2.35,0,1.2-.41,2.12-1.24,2.76-.83.64-2.01.96-3.55.96-1.82,0-3.24-.45-4.25-1.35-1.01-.9-1.56-2.13-1.65-3.7L0,20.68c.14,2.96,1.1,5.21,2.86,6.73,1.77,1.52,4.24,2.29,7.44,2.29s5.51-.7,7.31-2.11c1.79-1.41,2.69-3.46,2.69-6.13,0-2.19-.61-3.93-1.82-5.21-1.21-1.28-2.98-2.24-5.32-2.86m18.71,15.69h5V1.71h-5v27.35ZM55.63,1.71h-5v27.35h17.35v-4.19h-12.35V1.71Zm59.86,27.35h18.21v-4.19h-13.21v-7.61h11.5v-4.02h-11.5v-7.35h13.21V1.71h-18.21v27.35Zm42.08-11.63c1.71-.54,3.08-1.49,4.12-2.84,1.04-1.35,1.56-2.96,1.56-4.81,0-1.6-.39-3.01-1.16-4.23-.77-1.22-1.82-2.17-3.14-2.84-1.32-.67-2.78-1-4.38-1h-10.56v27.35h5v-11.2h3.38l7.01,11.2h5.77l-7.61-11.63Zm-3.89-3.42h-4.66V5.72h4.66c1.37,0,2.45.37,3.25,1.11.8.74,1.2,1.75,1.2,3.03s-.4,2.29-1.2,3.04c-.8.74-1.88,1.11-3.25,1.11m-66.69,17.56l7.13-10.53h-14.25l7.13,10.53ZM94.12,0h-14.25l7.13,10.53,7.13-10.53Zm0,21.05l7.12-10.53h-14.25l7.13,10.53Zm7.12-10.53l7.13-10.53h-14.25l7.12,10.53Zm-28.5,0l7.12,10.53,7.13-10.53h-14.25Zm-7.13-10.53l7.13,10.53,7.12-10.53h-14.25Z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </td>
+            <td class="" style="background-color: white; padding: 20px 0;">
+              <svg
+                id="Artwork"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 158.74 43.37"
+                height="24"
+              >
+                <defs>
+                  <style>
+                    .goldcls-1 {
+                      fill: #b49164;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="goldcls-1"
+                  d="m105.4,5.73h-5.84v31.92h20.25v-4.89h-14.41V5.73ZM18,24.38h8.73c-.23,2.83-1.28,5.02-3.14,6.58-1.86,1.56-4.24,2.34-7.13,2.34-2.06,0-3.88-.48-5.46-1.45-1.58-.96-2.8-2.32-3.67-4.06-.86-1.75-1.3-3.78-1.3-6.11s.43-4.32,1.3-6.08c.86-1.76,2.07-3.13,3.62-4.09,1.55-.96,3.3-1.45,5.26-1.45,2.06,0,3.87.5,5.44,1.5,1.56,1,2.66,2.36,3.29,4.09l6.03-.5c-1.36-3.59-3.24-6.18-5.63-7.78-2.39-1.6-5.44-2.39-9.13-2.39-3.09,0-5.88.73-8.35,2.19-2.48,1.46-4.41,3.47-5.78,6.03-1.38,2.56-2.07,5.42-2.07,8.58s.66,5.94,1.97,8.45c1.31,2.51,3.2,4.5,5.66,5.96,2.46,1.46,5.35,2.19,8.68,2.19s5.98-.66,8.35-1.97c2.38-1.31,4.21-3.15,5.49-5.51,1.28-2.36,1.92-5.07,1.92-8.13v-3.09h-14.06v4.69Zm138.62-11.02c-1.41-2.43-3.4-4.31-5.96-5.63-2.56-1.33-5.48-2-8.78-2h-11.62v31.92h11.62c3.29,0,6.22-.67,8.78-2.02,2.56-1.35,4.55-3.22,5.96-5.64,1.41-2.41,2.12-5.18,2.12-8.3s-.71-5.9-2.12-8.33Zm-6.83,16.46c-1.91,1.96-4.55,2.94-7.9,2.94h-5.78V10.61h5.78c3.36,0,5.99.98,7.9,2.94,1.91,1.96,2.87,4.67,2.87,8.13s-.96,6.17-2.87,8.13Zm-106.34-.9l7.52-7.23-7.52-7.23v14.46Zm45.1,0v-14.46l-7.52,7.23,7.52,7.23Zm-15.03-14.46V0l-7.52,7.23-7.52-7.23v14.46l-7.52-7.23v28.91l7.52-7.23v14.46l7.52-7.23,7.52,7.23v-14.46l7.52,7.23V7.23l-7.52,7.23Z"
+                />
+              </svg>
+            </td>
+            <td class="" style="background-color: white; padding: 20px 0;">
+              <svg
+                id="Artwork"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 283.46 37.98"
+                height="20"
+              >
+                <defs>
+                  <style>
+                    .platcls-1 {
+                      fill: #787d82;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="platcls-1"
+                  d="m40.54,3.03h-5.84v31.92h20.25v-4.89h-14.41V3.03Zm-22.97,1.27c-1.68-.85-3.58-1.27-5.71-1.27H0v31.92h5.84v-11.87h6.03c2.13,0,4.03-.42,5.71-1.27,1.68-.85,2.99-2.03,3.94-3.54.95-1.51,1.42-3.25,1.42-5.21s-.47-3.7-1.42-5.21c-.95-1.51-2.26-2.69-3.94-3.54Zm-2.12,12.67c-1,.95-2.39,1.42-4.19,1.42h-5.44V7.72h5.44c1.8,0,3.19.47,4.19,1.42,1,.95,1.5,2.25,1.5,3.91s-.5,2.97-1.5,3.91ZM76.84,3.03l-12.22,31.92h5.63l3.04-8.18h13.86l3.04,8.18h6.29l-12.17-31.92h-7.48Zm-1.8,19.05l5.24-13.96,5.19,13.96h-10.42Zm27.02-14.16h9.38v27.03h5.84V7.92h9.38V3.03h-24.59v4.89Zm37.24,27.03h5.84V3.03h-5.84v31.92Zm41.48-9.18l-14.71-22.74h-5.93v31.92h5.84V12.26l14.66,22.69h5.98V3.03h-5.83v22.74ZM275.19,3.03l-9.23,25.93-9.13-25.93h-8.33v31.92h5.69V11.31l8.33,23.64h6.88l8.38-23.64v23.64h5.69V3.03h-8.28ZM207.26,0l-10.31,6.33,10.31,6.33,10.31-6.33-10.31-6.33Zm0,12.66l-10.31,6.33,10.31,6.33,10.31-6.33-10.31-6.33Zm-10.31,18.99l10.31,6.33,10.31-6.33-10.31-6.33-10.31,6.33ZM227.87,0l-10.31,6.33,10.31,6.33,10.31-6.33-10.31-6.33Zm0,25.32l10.31-6.33-10.31-6.33-10.31,6.33,10.31,6.33Zm0,12.66l10.31-6.33-10.31-6.33-10.31,6.33,10.31,6.33Z"
+                />
+              </svg>
+            </td>
+            <td class="" style="background-color: white; padding: 20px 0;">
+              <svg
+                id="Isolation_Mode"
+                data-name="Isolation Mode"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 161.53 28.66"
+                height="20"
+              >
+                <defs>
+                  <style>
+                    .Blackcls-1,
+                    .Blackcls-2 {
+                      stroke-width: 0px;
+                    }
+
+                    .Blackcls-2 {
+                      fill: none;
+                    }
+
+                    .Blackcls-3 {
+                      clip-path: url(#clippath-1);
+                    }
+
+                    .Blackcls-4 {
+                      clip-path: url(#clippath);
+                    }
+                  </style>
+                  <clipPath id="clippath">
+                    <rect
+                      class="Blackcls-2"
+                      x="0"
+                      y="0"
+                      width="161.53"
+                      height="28.66"
+                    />
+                  </clipPath>
+                  <clipPath id="clippath-1">
+                    <rect
+                      class="Blackcls-2"
+                      x="-17.35"
+                      y="-17.35"
+                      width="196.24"
+                      height="63.37"
+                    />
+                  </clipPath>
+                </defs>
+                <g class="Blackcls-4">
+                  <g class="Blackcls-3">
+                    <path
+                      class="Blackcls-1"
+                      d="m72.8.66h-14.45v27.35h4.82v-6.84h4.82v-6.84h4.82v-6.84h4.82v6.84h4.82v6.84h4.82v6.84h4.82V.66h-19.27ZM15.43,13.56c1.11-.6,1.99-1.43,2.63-2.48.64-1.05.96-2.22.96-3.5s-.34-2.49-1.03-3.55c-.68-1.05-1.63-1.88-2.84-2.48-1.21-.6-2.56-.9-4.04-.9H0v27.35h11.37c2.79,0,4.98-.67,6.56-2.01s2.37-3.16,2.37-5.47c0-1.71-.44-3.16-1.32-4.34-.88-1.18-2.07-2.06-3.55-2.63M5,4.59h5.17c1.17,0,2.09.33,2.78.98.68.66,1.03,1.54,1.03,2.65s-.34,1.95-1.03,2.61c-.68.66-1.61.98-2.78.98h-5.17v-7.22Zm5.47,19.49h-5.47v-8.42h5.73c1.37,0,2.45.37,3.25,1.11.8.74,1.2,1.77,1.2,3.08,0,2.82-1.57,4.23-4.7,4.23M36.79.66h-5v27.35h17.35v-4.19h-12.35V.66Zm82.75,22.08c-1.4,1.04-3.05,1.56-4.96,1.56-1.71,0-3.23-.42-4.56-1.26-1.33-.84-2.35-2.02-3.08-3.53-.73-1.51-1.09-3.24-1.09-5.18s.36-3.66,1.09-5.18c.73-1.51,1.75-2.69,3.08-3.53,1.33-.84,2.84-1.26,4.56-1.26,1.88,0,3.52.52,4.92,1.56,1.4,1.04,2.37,2.47,2.91,4.3l4.92-.38c-.37-1.97-1.14-3.69-2.31-5.18-1.17-1.48-2.64-2.63-4.41-3.44C118.84.41,116.9,0,114.79,0,112.11,0,109.7.62,107.54,1.86c-2.15,1.24-3.84,2.95-5.05,5.13-1.21,2.18-1.82,4.63-1.82,7.34s.6,5.16,1.82,7.34c1.21,2.18,2.89,3.89,5.05,5.13,2.15,1.24,4.57,1.86,7.25,1.86,3.14,0,5.85-.87,8.13-2.61,2.28-1.74,3.76-4.08,4.45-7.02l-4.92-.6c-.54,1.83-1.51,3.26-2.91,4.3m30.11-10.71l11.41-11.37h-5.85l-12.44,12.52V.66h-5v27.35h5v-9.57l3.25-3.12,9.45,12.69h6.07l-11.88-15.98Z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </td>
+          </tr>
+          <tr class="header-row" data-toggle="rewards">
+            <td colspan="6">Rewards Overview</td>
+          </tr>
+          <tr class="toggle-row rewards" style="">
+            <td colspan="2"></td>
+            <td>Up to SAR24,999</td>
+            <td>SAR25,000 to SAR49,999</td>
+            <td>SAR50,000 to SAR249,999</td>
+            <td>SAR250,000+</td>
+          </tr>
+          <tr class="toggle-row rewards" style="">
+            <td colspan="2">Points earned for every SAR1 spent</td>
+            <td>1 Saudi Point</td>
+            <td>1.5 Saudi Points</td>
+            <td>2 Saudi Points</td>
+            <td>3 Saudi Points</td>
+          </tr>
+          <tr class="toggle-row rewards" style="">
+            <td rowspan="2">Redemption value per Saudi Point</td>
+            <td>Events and curated tourism experiences</td>
+            <td>SAR0.02</td>
+            <td>SAR0.02</td>
+            <td>SAR0.02</td>
+            <td>SAR0.02</td>
+          </tr>
+          <tr class="toggle-row rewards" style="">
+            <td>Travel and lifestyle purchase</td>
+            <td>SAR0.01</td>
+            <td>SAR0.01</td>
+            <td>SAR0.01</td>
+            <td>SAR0.01</td>
+          </tr>
+          <tr class="toggle-row rewards" style="">
+            <td colspan="2">Validity period of Saudi Rewards points</td>
+            <td>18 Months</td>
+            <td>24 Months</td>
+            <td>30 Months</td>
+            <td>36 Months</td>
+          </tr>
+          <tr class="toggle-row rewards" style="">
+            <td colspan="2">Members-only events and concerts</td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row rewards" style="">
+            <td colspan="2">5% Discount on Saudi City Passes</td>
+            <td>
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row rewards" style="">
+            <td colspan="2">
+              Complimentary access to eligible events & concerts
+            </td>
+            <td>By random selection</td>
+            <td>By random selection</td>
+            <td>By random selection</td>
+            <td>By invitation</td>
+          </tr>
+
+          <tr class="header-row" data-toggle="Events">
+            <td colspan="6">
+              Rewards for Eligible Events (MDLBEAST-Soundstorm)
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">Complimentary access to eligible Events</td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">Pre-launch booking access for events tickets</td>
+            <td></td>
+            <td></td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">20% discount on Tickets</td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">15% discount on Merchandise</td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">Raffle draw on 10 VIP Balconas</td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">Raffle draw on rooms in Intercontinental Hotel</td>
+            <td></td>
+            <td></td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">Raffle draw for VIP Box tickets</td>
+            <td></td>
+            <td></td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">Complimentary General admission tickets</td>
+            <td></td>
+            <td></td>
+            <td>By Invitation</td>
+            <td>By Invitation</td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">Demarcated parking at Events for VIP tickets</td>
+            <td></td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">
+              Shuttle service between parking area and entrance
+            </td>
+            <td></td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">Dedicated gate for Fast track entrance</td>
+            <td></td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">Her Experience zone dedicated for females</td>
+            <td></td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">
+              Exclusive in-event Raffle Draws and/or Grand Prizes
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">
+              Raffle Draw for Meet & Greet Influencers and Music Artists
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">
+              Raffle Draw for Backstage Access to Music Artists
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+              <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll(".header-row").forEach((headerRow) => {
+    headerRow.addEventListener("click", () => {
+      const toggleClass = headerRow.getAttribute("data-toggle");
+      document.querySelectorAll(`.toggle-row.${toggleClass}`).forEach((row) => {
+        row.style.display = row.style.display === "none" ? "" : "none";
+      });
+    });
+  });
+</script>

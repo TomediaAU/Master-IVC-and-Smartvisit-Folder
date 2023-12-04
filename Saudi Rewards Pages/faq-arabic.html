@@ -1,0 +1,1026 @@
+<!-- <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet" /> -->
+
+<!-- Put in head if doesn't work normally -->
+<style>
+  /* @import url("https://fonts.cdnfonts.com/css/gotham"); */
+
+  /*@font-face {
+    font-family: "Wicklow Bold";
+    src: url("Fonts/F37Wicklow-Bold.otf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Wicklow Medium";
+    src: url("Fonts/F37Wicklow-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Blanka Arabic Regular";
+    src: url("Fonts/F37BlankaArabic-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Blanka Arabic Bold";
+    src: url("Fonts/F37BlankaArabic-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+  } */
+  .articles__wrapper {
+    /* padding-top: 60px; */
+    /* padding-bottom: 60px; */
+    min-height: 300px;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .menu-t {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu-t-item {
+    padding: 16px;
+    padding-right: 35px;
+    background-color: #ebebeb;
+    color: #4f4b59;
+    cursor: pointer;
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18pt;
+    position: relative;
+    /* margin-bottom: 5px; */
+  }
+
+  .active-svg {
+    color: #be008c;
+    position: absolute;
+    right: 16px;
+    /* top: -5px; */
+    top: 25px;
+    font-size: 25px;
+    font-weight: 900;
+    display: none;
+  }
+
+  .normal-svg {
+    position: absolute;
+    right: 16px;
+    /* top: -5px; */
+    top: 25px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menu-t-item.active .active-svg {
+    display: block;
+  }
+
+  .menu-t-item.active .normal-svg {
+    display: none;
+  }
+
+  .menu-t-item.active {
+    background-color: #be008c;
+    color: #ffffff;
+  }
+
+  .tab-t {
+    display: none;
+  }
+
+  .tab-t.active {
+    display: block;
+  }
+
+  .tab-t-content {
+    grid-column: 2 / span 3;
+  }
+
+  .main-content-t {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+    gap: 150px;
+
+    margin: 60px 0;
+  }
+
+  .tab-t h2 {
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18pt;
+    line-height: 22px;
+    margin: 0;
+    color: #be008c;
+  }
+
+  .tab-t p {
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18pt;
+    line-height: 140%;
+  }
+
+  .tab-t hr {
+    border: 1px solid rgba(0, 0, 0, 1);
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .body-content-t {
+    width: 80%;
+  }
+
+  .table-t {
+    border-collapse: collapse;
+    font-family: "Blanka Arabic Regular";
+    font-style: normal;
+    border: 1px solid lightgray;
+  }
+
+  .table-t th {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #be008c;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+  }
+
+  .table-t td {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-collapse: collapse;
+  }
+
+  .toTopT {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #be008c;
+    padding: 10px;
+
+    border-radius: 50%;
+    /* display: none; */
+    color: #f5f6f8;
+  }
+
+  .banner {
+    /* width: 100%; */
+    /* height: 400px; */
+    background-color: #41001e;
+    background-image: url("https://image.iventurecard.com/images/static/static-faqbg@3x-(large)-28112023152009.png");
+    background-position: 0%;
+    background-size: 100% auto;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; */
+
+    padding: 200px 200px;
+    margin: 0;
+  }
+  .banner h1 {
+    font-family: "Wicklow Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90pt;
+    /* text-indent: -50px; */
+    color: #ffffff;
+    margin: 0;
+    /* padding-top: 90px */
+  }
+  /* .banner h1::first-line {
+    text-indent: 0px;
+  } */
+
+  @media screen and (max-width: 1200px) {
+    .main-content-t {
+      gap: 20px;
+    }
+
+    .banner {
+      background-size: auto 100%;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .main-content-t {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .tab-t-content {
+      grid-column: 1;
+
+      padding-top: 20px;
+    }
+
+    .banner {
+      align-items: center;
+
+      background-position: 50%;
+      padding: 0;
+
+      background-size: auto 100%;
+    }
+    .banner h1 {
+      font-size: 40px;
+      text-indent: 0px;
+      margin: 0;
+      padding: 20px;
+    }
+    .banner h1::first-line {
+      text-indent: 0px;
+    }
+  }
+</style>
+
+<!-- <div class="banner">
+    <h1>
+      Frequently <br>
+      asked <br>
+      questions
+    </h1>
+</div> -->
+
+<!-- Copy content into your platform -->
+<a class="toTopT" href="#top">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+    <style>
+      svg {
+        fill: #ffffff;
+        height: 20px;
+      }
+    </style>
+    <path
+      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+    />
+  </svg>
+</a>
+
+<div class="main-content-t" dir="rtl" lang="ar" >
+  <!-- Tabs -->
+  <div class="menu-t">
+    <div  href="#" class="menu-t-item active" data-tab-t="General">
+      الاستفسارات العامة:
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+    <div href="#" class="menu-t-item" data-tab-t="Account">
+      الحساب
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+    <div href="#" class="menu-t-item" data-tab-t="Enrollment ">
+      التسجيل
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+    <div href="#" class="menu-t-item" data-tab-t="EarnPoints">
+     اكتساب النقاط
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+    <div href="#" class="menu-t-item" data-tab-t="RedeemPoints">
+      استبدال النقاط
+
+
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+    <div href="#" class="menu-t-item" data-tab-t="Suggestions">
+      الاقتراحات
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+
+    <div href="#" class="menu-t-item" data-tab-t="MembershipTiers">
+     فئات العضوية
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+
+    <div href="#" class="menu-t-item" data-tab-t="OtherQuestions">
+      أسئلة أخرى
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+
+    <div href="#" class="menu-t-item" data-tab-t="Rewards">
+     المكافآت 
+      <div class="normal-svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#be008c" />
+        </svg>
+      </div>
+      <div class="active-svg">
+        <svg
+          width="16"
+          height="2"
+          viewBox="0 0 16 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="tab-t-content">
+    <div id="General" class="tab-t active">
+      <h2 dir="rtl" lang="ar" >ما هو برنامج مكافآت السعودية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          برنامج مكافآت السعودية مصمم حتى يساعدك تنبسط أكثر في السعودية، وكعضو
+          في البرنامج تقدر تكسب نقاط وأنت بتستكشف البلد اللي تحبه، وهذا يعني إنك
+          راح تكسب مكافآت لقاء الفعاليات السياحية و باقات السفر و بطاقة المدن
+          السياحية ، أو حتى مقابل أنشطتك اليومية مثل المطاعم، والتسوق اليومي،
+          والترفيه وغيره. اشترك واكسب و استبدل نقاطك من السياحة والسفر واللايف
+          ستايل مع شركاء برنامج مكافآت السعودية.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2 dir="rtl" lang="ar" >
+        ما هي الفعاليات السياحية، وعمليات الشراء من شركاء السفر ولايف ستايل
+      </h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          الفعاليات السياحية هي أنشطة ومبادرات تُجهزّ على نطاق واسع وكبير. أما
+          عمليات الشراء من شركاء السفر تتضمن رحلات وأماكن الإقامة، بينما تتضمن
+          عمليات الشراء من لايف ستايل مستلزماتك الحياتية اليومية .
+        </p>
+      </div>
+
+      <hr />
+
+      <h2 dir="rtl" lang="ar" >ما هي مزايا الانضمام إلى برنامج مكافآت السعودية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          سيتيح لك الانضمام لبرنامج مكافآت السعودية من اكتساب واستبدال النقاط عن
+          طريق الفعاليات السياحية و باقات السفر وبطاقة المدن السياحية المصممة
+          لتلبي احتياجاتك من خلال شركائنا. أيضا يُتيح البرنامج تجارب حصرية جديدة
+          تقدر من خلالها الاستفادة من بعض العروض مثل الخصومات على كافة عمليات
+          التسوّق والشراء والمطاعم والرحلات والترفيه.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2 dir="rtl" lang="ar" >كيف أطّلع على رصيد نقاطي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          تقدر تتطّلع على رصيد نقاطك في أي وقت بالضغط على صفحة "حسابي". فقط تأكد
+          من تسجيل الدخول! وتقدر تطالع رصيدك على بطاقتك الرقمية الخاصة بعضوية
+          برنامج مكافآت السعودية.
+        </p>
+      </div>
+    </div>
+
+    <div id="Account" class="tab-t">
+      <h2 dir="rtl" lang="ar" >كيف أحدّث بياناتي الشخصية واهتماماتي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          بإمكانك تحديث حسابك في أي وقت بكل سهولة . فقط سجل الدخول ثم انتقل إلى
+          صفحة "حسابي"، ثم حدِث المعلومات.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2 dir="rtl" lang="ar" >ماهو رقم عضويتي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          رقم عضويتك هو رمز تعريف خاص بك ويتكون من 10 أرقام، هذا الرقم هو هويتك
+          في برنامج مكافآت السعودية. وتقدّر تطلع على رقم عضويتك من خلال صفحة
+          "حسابي" أو من خلال بطاقتك الرقمية.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >كيف أقدر أحمل بطاقتي الرقمية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          يُرجى التحقق من الإيميل الترحيبي المُرسل على إيميلك بعد انتهائك من
+          التسجيل في برنامج مكافآت السعودية، ثم اضغط على الرابط الموجود فى
+          إيميلك.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >كيف أغير كلمة المرور لحسابي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          خطوات تغيير كلمة المرور بسيطة وسهلة، كل ما عليك هو انك تضغط على خانة
+          "هل نسيت كلمة المرور؟"، ليصلك إيميل فيه كل التعليمات الخاصة بتحديث
+          كلمة المرور.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >كيف أغير اللغة في موقع برنامج مكافآت السعودية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          Hello أو مرحبا… استعمل القائمة المتاحة للغات المتوفرة في الموقع ثم
+          اختر اللغة التي تُفضلها.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >هل أقدر أدمج حسابين ولاء في برنامج مكافآت السعودية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          للأسف، لا يمكن دمج حسابين في برنامج مكافآت السعودية. لا يسمح إلا بوجود
+          حساب واحد فقط لكل رقم جوال وايميل.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >كيف أغلق حسابي في برنامج مكافآت السعودية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          بتفوتك كل المكافآت والمزايا والعروض اذا اغلقت حسابك، لكن تواصل مع مركز
+          العناية بالزائر وبيساعدك الموظف في إغلاق حسابك. اتصل بالرقم 930 لو
+          بتتصل من داخل السعودية، أو بالرقم الدولي 00890 9200 966 + لو بتتصل من
+          خارج السعودية، وتقدر ترسل إيميل على ask@visitsaudi.com وبيتم التواصل
+          معك في أقرب فرصة.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >وش بيصير لنقاطي إذا أغلقت حسابي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          لا تروح واستمر معانا في البرنامج لتستفيد من المزايا والمكافآت الحصرية
+          اللي بتروح عليك إذا أغلقت حسابك، لكن حتى لو أغلقت حسابك، يمديك تستفيد
+          من القسائم اللي اصدرتها قبل إغلاق الحساب والغير منتهية صلاحيتها. إذا
+          قررت بالفعل إغلاق الحساب، فالأفضل إنك تستخدم نقاطك أولاً، وراجع دايماً
+          الأحكام والشروط لكل القسائم أو عروض الشركاء.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >وش بيصير لقسائمي إذا أوقفت حسابي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          على عكس النقاط، تقدر تستبدل القسائم اللي باقي ما استخدمتها، لكن احتفظ
+          بنسخة من القسيمة قبل إغلاق الحساب. لان ما يمديك تستخدمها بحساب غير
+          نشط.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >لماذا يجب إنشاء رمز دخول (PIN)؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          رمز الدخول PIN متطلب إلزامي في الملف الشخصي للعضو، يحفظ لك خصوصية
+          معلوماتك، ويضمن لك عمليات استبدال النقاط مع الشركاء وأيضا يربط حسابك
+          في برنامج مكافآت السعودية على مواقع الويب الخاصة بالشركاء. ولكنه ليس
+          إجباري عند التسجيل. يكون إلزامي مرة واحدة فقط؛ عند تسجيل الدخول للحساب
+          للمرة الأولى، يصلك رابط لتحديث رمز الدخول PIN الخاص بك من خلال الإيميل
+          الترحيبي المُرسل عند التسجيل في برنامج مكافآت السعودية.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >كيف يتم تعيين رمز دخول PIN؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          تقدر تعين رمز الدخول PIN في خطوات بسيطة: <br />
+          1. سجّل الدخول إلى حسابك <br />
+          2. اضغط على صفحة حسابي. <br />
+          3. اضغط على خانة "إنشاء رمز الدخول". وأدخل رقم مكون من 4 أرقام من
+          اختيارك، بعدها قم بالتأكيد.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >كيف استعمل رمز الدخول؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          عند إتمام عملية شراء مع أيٍ من شركاء برنامج مكافآت السعودية، سيُطلب
+          منك ادخال الرمز المكون من 4 أرقام للتأكد من هويتك. هذا الإجراء إلزامي
+          لإكمال العملية، ونفس الرقم مطلوب لإتمام عمليات استبدال النقاط.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="Enrollment " class="tab-t">
+      <h2 dir="rtl" lang="ar" >كيف أسجل في برنامج مكافآت السعودية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          ياهلا ومرحبا ، يسعدنا الترحيب بالأعضاء الجدد في برنامج مكافآت
+          السعودية، تفضل بزيارة الصفحة الرئيسية واتبع خطوات التسجيل.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2 dir="rtl" lang="ar" >هل يقتصر التسجيل على رقم جوال سعودي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          لا! تقدر تسجل من أي رقم جوال سواء كنت بتسجل من رقم محلي أو دولي من
+          داخل أو خارج السعودية.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="EarnPoints" class="tab-t">
+      <h2 dir="rtl" lang="ar" >متى ابدأ في كسب النقاط؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          النقاط مره قريبه منك، أول ما تسجل في برنامج مكافآت السعودية تقدر تشوف
+          بنفسك عدد النقاط من مشترياتك في الفعاليات السياحية أو بطاقة المدن
+          السياحية.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >كيف اكسب النقاط ؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          الأمر سهل وبسيط، تقدر تكسب النقاط بشكل تلقائي على كل عملياتك الشرائية
+          في الفعاليات السياحية. اعرف أكثر من خلال صفحة المكافآت.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >كم من الوقت يستغرق ظهور النقاط في حسابي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          تعتمد مدة ظهور النقاط في حسابك على الشريك اللي كسبت النقاط عنده، ونوع
+          المعاملة، ممكن تصل المدة ل 30 يوم عند بعض الشركاء، لا تتردد في التواصل
+          مع مركز العناية بالزائر، إذا عندك أي استفسارات أو شكاوى أو اقتراحات،
+          وزودهم برقم جوالك وتفاصيل المعاملة، حتى يتم الرد على استفساراتك فيما
+          يخص قوانين وزمن المعاملة .اتصل بالرقم 930 من داخل السعودية أو 00890
+          9200 966 + للمتصلين الدوليين من خارج السعودية، أو أرسل إيميل ل
+          ask@visitsaudi.com وهيتم التواصل معك في أقرب فرصة.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >من هم شركاء برنامج مكافآت السعودية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          عندنا شركاء مميزين وبنزيدهم أكثر و أكثر.. ولأنك عضو في برنامج مكافآت
+          السعودية، تقدر تشوف كل الشركاء والعروض في صفحة المكافآت . لا تتردد في
+          زيارة الصفحة والتعرف أكثر على خيارات وتجارب ملهمة.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >كم مدة صلاحية نقاطي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          النقاط صالحة لفترات زمنية مختلفة، ويعتمد هذا على فئة العضوية الخاصة
+          بك. كل ما ارتقت فئتك زاد عدد النقاط لكل ريال سعودي تصرفه، ممكن تمتد
+          فترة صلاحية النقاط حتى تصل إلى 36 شهر في أعلى فئة وهي البلاك، لمعلومات
+          أكثر، تفضل بزيارة صفحة فئات العضوية.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >هل أقدر أشتري النقاط ؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          للأسف، لا يمكن شراء النقاط، هي تستبدل فقط بعروض ومزايا أخرى كثيرة
+          ومتنوعة.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >ماهو رصيد نقاطي اللي كسبتها أو استبدلتها أو منتهية الصلاحية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          راجع ملفك الشخصي على صفحة "حسابي"، وأيضا تقدر تعرف رصيدك من النقاط من
+          خلال كشف الحساب الإلكتروني المُرسل لك كل شهر على إيميلك.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="RedeemPoints" class="tab-t">
+      <h2 dir="rtl" lang="ar" >مَن هم شركاء برنامج مكافآت السعودية اللي أقدر استبدل نقاطي عندهم؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          تقدر تتطلع على شركاء برنامج مكافآت السعودية والبروفايل حقهم من خلال
+          زيارة "صفحة مكافآت".
+        </p>
+      </div>
+
+      <hr />
+
+      <h2 dir="rtl" lang="ar" >هل لديكم شركاء أخرين أقدر استبدل نقاطي عندهم؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          راح تلقى جميع شركاء استبدال النقاط مُدرجين في صحفة المكافآت.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >ماذا أفعل لو استبدلت نقاطي بقسيمة وبعدين قررت إلغاء العملية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          للأسف، ما تقدر تسترد النقاط المُستبدلة بقسائم ولا يمكن إلغاء العملية.
+          فقط تحقُّق من الأحكام والشروط لكل العروض.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2 dir="rtl" lang="ar" >
+        هل أقدر استبدل نقاط في متجر الشريك أو أنّ استبدال النقاط متاح عبر موقع
+        مكافآت السعودية فقط؟
+      </h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          تقدر تستبدل النقاط عبر موقع مكافآت السعودية، لكن لازم تتحقق من تفاصيل
+          قسيمتك لمعرفة ما إذا كانت تُستخدم في المتجر أو أون لاين أو كلاهما.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >هل يتطلب الاستبدال حد أدنى من رصيد النقاط ؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          لا، ما يتطلب الاستبدال حد أدنى من النقاط، ولكن لازم يكون في رصيدك عدد
+          محدد من النقاط لاستبدالها مقابل قسيمة الشريك اللي ودّك فيها.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="Suggestions" class="tab-t">
+      <h2 dir="rtl" lang="ar" >كيف أرسل مقترح لفريق مكافآت السعودية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          حنا في خدمتكم، ويسعدنا تلقي اقتراحاتكم، ولك كامل الحرية إنك تقيم
+          تجربتك وتبدي رأيك حول مدى رضاك عن برنامج مكافآت السعودية، وتقدر تعطينا
+          اقتراحاتك حول كيف نحسن من جودة خدماتنا بما يتناسب مع توقعاتك. للتواصل،
+          تفضل بإرسال إيميل إلى ask@visitsaudi.com أو اتصل بنا على رقم 930 من
+          داخل السعودية أو (00890 9200 966 + للمتصلين الدوليين) من خارج
+          السعودية.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="MembershipTiers" class="tab-t">
+      <h2 dir="rtl" lang="ar" >ما هي الفئات المختلفة في برنامج مكافآت السعودية؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          يوجد 4 فئات مختلفة لعضوية برنامج مكافآت السعودية: "الفضية والذهبية
+          والبلاتينية والبلاك". كل ما زادت أنشطتك وعملياتك الشرائية مع شركاء
+          السياحة، أو على تجارب السفر او على بطاقة المدن السياحية، ترقيت لفئة
+          أعلى، وكل ما كانت الفئة أعلى، راح تكسب نقاط أكثر وتقدر تستبدلها وراح
+          تتلقى مزايا وعروض حصرية أكثر. وإذا تبي تعرف أكثر عن الفئات، اطّلع على
+          صفحة "فئات العضوية" في موقع برنامج مكافآت السعودية.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2 dir="rtl" lang="ar" >ما هي المزايا اللي تستفيد منها في كل فئة؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          لا يمكن حصر المزايا الكثيرة والمتنوعة هنا، للتعرف أكثر عن المزايا التي
+          تقدمها كل فئة ومدى الإستفادة من كل واحدة، تفضل بزيارة صفحة "فئات
+          العضوية"
+        </p>
+      </div>
+
+      <hr />
+
+      <h2 dir="rtl" lang="ar" >هل من الممكن أن يتم تخفيض فئتي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          نعم، في حالة كنت عضو في الفئة الذهبية أو البلاتينية أو البلاك وما قدرت
+          تحقق الشروط المطلوبة في فئتك، راح يقل مستوى فئتك. لكن لا تشيل هم، فمن
+          خلال عملياتك الشرائية لحضور الفعاليات السياحية مع شركائنا، أو تجارب
+          السفر أو بطاقة المدن السياحية تقدر ترجع تستفيد من مزايا الفئة اللي كنت
+          فيها.
+        </p>
+      </div>
+
+      <hr />
+
+      <h2 dir="rtl" lang="ar" >ماذا سيحصل لنقاطي إذا انخفضت فئة عضويتي؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          تبقى نقاطك فعّالة حتى تاريخ انتهاء صلاحيتها، حتى لو انخفضت فئة عضويتك.
+          لكن حتى لو انخفضت فئتك تقدر تزود من مشترياتك وتحصل على نقاط أكثر لغاية
+          ما ترتقي فئتك لمستوى أعلى مره أخرى.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="OtherQuestions" class="tab-t">
+      <h2 dir="rtl" lang="ar" >عندك أي أسئلة إضافية عن مشاكل أخرى؟ ونستطيع نساعدك</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          إذا كان عندك أي أسئلة أخرى لم نجاوب عليها أو لديك استفسارات محددة ،
+          يرجى الاتصال بمركز العناية بالزائر علي الرقم 930 .. لو بتتصل من داخل
+          السعودية أو الرقم الدولي 00890 9200 966 + لو بتتصل من خارج السعودية،
+          وتقدر ترسل لنا إيميل على ask@visitsaudi.com.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+
+    <div id="Rewards" class="tab-t">
+      <h2 dir="rtl" lang="ar" >ما هي صفحة المكافآت؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          صفحة المكافآت هي بوابتك الرئيسية للتعرف على مكافآتك اللي تشمل العروض
+          والمزايا الحصرية المتاحة لك.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >ماهي صفحة اكتساب النقاط؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          تقدر تكسب نقاط مع كل عملية شرائية تقوم بها في الأنشطة والفعاليات
+          والعروض الخاصة بشركاء برنامج مكافآت السعودية مثل، على سبيل المثال لا
+          الحصر، حضور الفعاليات أو تجارب السفر أو المشاركة في رحلات داخلية أو
+          شراء بطاقة المدن السياحية أو حتى خلال التسوّق ، فكل ريال سعودي تصرفه،
+          يكسبك نقاط تقدر تستبدلها بقسائم شرائية أو مزايا وعروض أخرى خاصة
+          بالأعضاء.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >ماهي صفحة استبدال النقاط؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          يمكن لأعضاء البرنامج استكشاف العديد من الفرص لاستبدال النقاط اللي
+          حصلوا عليها بكوبونات خصم أو مكافآت أو عروض من شركاء البرنامج. لتفعيل
+          عملية الاستبدال، اذهب لقائمة الخيارات في حسابك وقم بتفعيل النقاط على
+          تذاكر الفعاليات أو تجارب السفر أو بطاقة المدن السياحية.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >ما هي صفحة العروض؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          من خلال عروض شركائنا في البرنامج، تقدر تحصل على مكافآت حصرية وخدمات
+          اضافية وعروض ترويجية على المطاعم وتأجير السيارات والترفيه وغيرها
+          الكثير.
+        </p>
+      </div>
+
+      <hr />
+      <h2 dir="rtl" lang="ar" >ما هي صفحة المزايا؟</h2>
+      <div>
+        <p dir="rtl" lang="ar" class="body-content-t">
+          هي مزايا ملموسة راح يحصل عليها العضو بناءً على فئة عضويته، وما تتطلب
+          منه استبدال أي نقاط. تتضمن هذه المزايا أو المكافآت مواقف سيارات مجانية
+          أو دخول صالات اللاونج. كما أن هناك مزايا تقدم فقط عن طريق شركاء
+          فعاليات السياحة مثل الرحلات وبطاقة المدن السياحية وغيرها.
+        </p>
+      </div>
+
+      <hr />
+    </div>
+  </div>
+
+  <!-- <h2 dir="rtl" lang="ar" ></h2>
+      <div>
+        <p dir="rtl" lang="ar"class="body-content-t">
+        </p>
+        
+      </div>
+
+      <hr> -->
+
+  <!-- Keep this below, if it doesn't work then move to head -->
+  <script>
+    // Get all menu-t items
+    const menuItems = document.querySelectorAll(".menu-t-item");
+
+    // Get all tab-ts
+    const tabs = document.querySelectorAll(".tab-t");
+
+    // Loop through each menu-t item
+    menuItems.forEach((menuItem) => {
+      // Add click event listener to menu-t item
+      menuItem.addEventListener("click", (e) => {
+        // Prevent default link behavior
+        e.preventDefault();
+
+        // Get the data-tab-t attribute value of the clicked menu-t item
+        const tabId = e.target.getAttribute("data-tab-t");
+
+        // Remove active class from all menu-t items and tab-ts
+        menuItems.forEach((menuItem) => {
+          menuItem.classList.remove("active");
+        });
+
+        tabs.forEach((tab) => {
+          tab.classList.remove("active");
+        });
+
+        // Add active class to clicked menu-t item and corresponding tab-t
+        e.target.classList.add("active");
+        document.getElementById(tabId).classList.add("active");
+      });
+    });
+  </script>
+</div>
