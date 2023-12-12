@@ -219,7 +219,41 @@
   .table-t .header-row td {
     background-color: #46c8a0 !important;
     font-size: 24pt;
+   position: relative;
   }
+
+
+  
+  .active-svg {
+    color: white;
+    position: absolute;
+    right: 16px;
+    /* top: -5px; */
+    top: 25px;
+    font-size: 25px;
+    font-weight: 900;
+    display: none;
+  }
+
+  .normal-svg {
+    position: absolute;
+    right: 16px;
+    /* top: -5px; */
+    top: 20px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+    display: block;
+  }
+
+  .header-row.active .active-svg {
+    display: block;
+  }
+
+  .header-row.active .normal-svg {
+    display: none;
+  }
+
 
   .table-t table th {
     padding: 26px;
@@ -602,9 +636,40 @@
     .about-section-1 .body-content {
       width: 100%;
     }
+
+    
+   .main-content-t p {
+      font-size: 14pt!important;
+    }
+
+    .main-content-t h2 {
+      font-size: 24pt!important;
+    }
+
+    .main-content-t h3 {
+      font-size: 24pt!important;
+    }
+
+    .table-t table tbody td {
+      padding: 10px 10px;
+      font-size: 12pt!important;
+    }
+
   }
 
   @media screen and (max-width: 400px) {
+  }
+
+  @media screen and (max-width: 1600px) {
+    .how-to-join-section {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  
+    .membership-holder {
+      width: 95%!important;
+    }
+  
   }
 </style>
 
@@ -722,7 +787,8 @@
           <p>
             Start at Silver and earn points, benefits and offers from the moment
             you sign up. It’s free to join and only gets better the further you
-            go.
+            go. You’ll earn 1 Saudi point for every SAR1 spent, and your points remain valid for 18 
+months.
           </p>
         </div>
         <div class="membership-tier-card">
@@ -732,6 +798,7 @@
               id="Artwork"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 158.74 43.37"
+              style="height: 35px;margin-bottom:-5px;"
             >
               <defs>
                 <style>
@@ -1018,8 +1085,32 @@
               </svg>
             </td>
           </tr>
-          <tr class="header-row" data-toggle="rewards">
-            <td colspan="6">Rewards Overview</td>
+          <tr class="header-row active" data-toggle="rewards">
+            <td colspan="6">Rewards Overview
+
+              <div class="normal-svg">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#fff" />
+                </svg>
+              </div>
+              <div class="active-svg">
+                <svg
+                  width="16"
+                  height="2"
+                  viewBox="0 0 16 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+                </svg>
+              </div>
+            </td>
           </tr>
           <tr class="toggle-row rewards" style="">
             <td colspan="2"></td>
@@ -1037,7 +1128,7 @@
           </tr>
           <tr class="toggle-row rewards" style="">
             <td rowspan="2">Redemption value per Saudi Point</td>
-            <td>Events and curated tourism experiences</td>
+            <td>Eligible Events and curated tourism experiences</td>
             <td>SAR0.02</td>
             <td>SAR0.02</td>
             <td>SAR0.02</td>
@@ -1049,13 +1140,6 @@
             <td>SAR0.01</td>
             <td>SAR0.01</td>
             <td>SAR0.01</td>
-          </tr>
-          <tr class="toggle-row rewards" style="">
-            <td colspan="2">Validity period of Saudi Rewards points</td>
-            <td>18 Months</td>
-            <td>24 Months</td>
-            <td>30 Months</td>
-            <td>36 Months</td>
           </tr>
           <tr class="toggle-row rewards" style="">
             <td colspan="2">Members-only events and concerts</td>
@@ -1282,63 +1366,47 @@
 
           <tr class="header-row" data-toggle="Events">
             <td colspan="6">
-              Rewards for Eligible Events (MDLBEAST-Soundstorm)
+              Rewards for Eligible Events (MDLBEAST)
+
+              <div class="normal-svg">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M16 9H9V16H7V9H0V7H7V0H9V7H16V9Z" fill="#fff" />
+                </svg>
+              </div>
+              <div class="active-svg">
+                <svg
+                  width="16"
+                  height="2"
+                  viewBox="0 0 16 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+
+                >
+                  <line y1="1" x2="16" y2="1" stroke="white" stroke-width="2" />
+                </svg>
+              </div>
             </td>
           </tr>
+          
+
+
+          <!-- Additions -->
           <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">Complimentary access to eligible Events</td>
+            <td colspan="2">Pre-launch booking access for event tickets</td>
             <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
+              
             </td>
             <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
+             
             </td>
             <td>
-              <svg
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -1389,11 +1457,59 @@
             </td>
           </tr>
           <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">Pre-launch booking access for events tickets</td>
-            <td></td>
-            <td></td>
+            <td colspan="2">20% discount on tickets</td>
             <td>
               <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+             <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -1444,7 +1560,7 @@
             </td>
           </tr>
           <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">20% discount on Tickets</td>
+            <td colspan="2">15% discount on merchandise</td>
             <td>
               <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
@@ -1471,7 +1587,7 @@
               </svg>
             </td>
             <td>
-              <svg
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -1496,110 +1612,7 @@
               </svg>
             </td>
             <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-          </tr>
-          <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">15% discount on Merchandise</td>
-            <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -1650,7 +1663,7 @@
             </td>
           </tr>
           <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">Raffle draw on 10 VIP Balconas</td>
+            <td colspan="2">Raffle drawing for 10 VIB  Balcona tickets </td>
             <td>
               <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
@@ -1677,7 +1690,7 @@
               </svg>
             </td>
             <td>
-              <svg
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -1702,62 +1715,7 @@
               </svg>
             </td>
             <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-          </tr>
-          <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">Raffle draw on rooms in Intercontinental Hotel</td>
-            <td></td>
-            <td></td>
-            <td>
-              <svg
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -1808,11 +1766,15 @@
             </td>
           </tr>
           <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">Raffle draw for VIP Box tickets</td>
-            <td></td>
-            <td></td>
+            <td colspan="2">Raffle drawing for rooms at the InterContinental hotel</td>
             <td>
-              <svg
+              
+            </td>
+            <td>
+             
+            </td>
+            <td>
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -1863,123 +1825,15 @@
             </td>
           </tr>
           <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">Complimentary General admission tickets</td>
-            <td></td>
-            <td></td>
-            <td>By Invitation</td>
-            <td>By Invitation</td>
-          </tr>
-          <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">Demarcated parking at Events for VIP tickets</td>
-            <td></td>
+            <td colspan="2">Raffle drawing for VIB  Box tickets </td>
             <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
+              
             </td>
             <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
+             
             </td>
             <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-          </tr>
-          <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">
-              Shuttle service between parking area and entrance
-            </td>
-            <td></td>
-            <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -2030,10 +1884,12 @@
             </td>
           </tr>
           <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">Dedicated gate for Fast track entrance</td>
-            <td></td>
+            <td colspan="2">Reserved parking at events for VIB  ticket holders</td>
             <td>
-              <svg
+              
+            </td>
+            <td>
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -2058,86 +1914,7 @@
               </svg>
             </td>
             <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-          </tr>
-          <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">Her Experience zone dedicated for females</td>
-            <td></td>
-            <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -2188,9 +1965,7 @@
             </td>
           </tr>
           <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">
-              Exclusive in-event Raffle Draws and/or Grand Prizes
-            </td>
+            <td colspan="2">Exclusive in-event raffle drawings and/or grand prizes</td>
             <td>
               <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
@@ -2217,7 +1992,7 @@
               </svg>
             </td>
             <td>
-              <svg
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -2242,112 +2017,7 @@
               </svg>
             </td>
             <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-          </tr>
-          <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">
-              Raffle Draw for Meet & Greet Influencers and Music Artists
-            </td>
-            <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
-                id="MEMBERSHIP_HOW_IT_WORKS"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                width="20px"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: #fff;
-                      stroke-width: 0px;
-                    }
-                  </style>
-                </defs>
-                <rect
-                  class="cls-1"
-                  x="2.34"
-                  y="2.34"
-                  width="11.31"
-                  height="11.31"
-                  transform="translate(8 -3.31) rotate(45)"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -2398,11 +2068,59 @@
             </td>
           </tr>
           <tr class="toggle-row Events" style="display: none">
-            <td colspan="2">
-              Raffle Draw for Backstage Access to Music Artists
-            </td>
+            <td colspan="2">Raffle drawing for meet-and-greets with influencers and music artists</td>
             <td>
               <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+             <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -2451,8 +2169,61 @@
                 />
               </svg>
             </td>
+          </tr>
+          <tr class="toggle-row Events" style="display: none">
+            <td colspan="2">Raffle drawing for backstage access to music artists </td>
             <td>
               <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+             <svg
+                id="MEMBERSHIP_HOW_IT_WORKS"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20px"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <rect
+                  class="cls-1"
+                  x="2.34"
+                  y="2.34"
+                  width="11.31"
+                  height="11.31"
+                  transform="translate(8 -3.31) rotate(45)"
+                />
+              </svg>
+            </td>
+            <td>
+             <svg
                 id="MEMBERSHIP_HOW_IT_WORKS"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -2512,6 +2283,18 @@
   document.querySelectorAll(".header-row").forEach((headerRow) => {
     headerRow.addEventListener("click", () => {
       const toggleClass = headerRow.getAttribute("data-toggle");
+
+      //  Add Active Class
+      headerRow.classList.toggle(
+        "active",
+        !headerRow.classList.contains("active")
+      );
+
+      dataLayer.push({
+        event:'expand',
+      });
+
+
       document.querySelectorAll(`.toggle-row.${toggleClass}`).forEach((row) => {
         row.style.display = row.style.display === "none" ? "" : "none";
       });

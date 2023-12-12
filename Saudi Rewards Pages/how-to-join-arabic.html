@@ -193,8 +193,9 @@
   .main-content .big-number::after {
     content: url("data:image/svg+xml,%3Csvg id='ABOUT_HOW_TO_JOIN' data-name='ABOUT HOW_TO_JOIN' width='30px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.75 51.25'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B stroke-width: 0px; %7D %3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='20.5 20.5 20.5 10.25 10.25 10.25 10.25 0 0 0 0 10.25 0 20.5 0 30.75 0 41 0 51.25 10.25 51.25 10.25 41 20.5 41 20.5 30.75 30.75 30.75 30.75 20.5 20.5 20.5'/%3E%3C/svg%3E");
     position: absolute;
+    transform: rotate(180deg);
     /* top: 100px; */
-    top: -90px;
+    top: 90px;
     right: -70px;
   }
 
@@ -379,7 +380,7 @@
   }
 
   .about-section-2 h2 {
-    text-align: left;
+    text-align: right;
   }
 
   .about-section-2 h2::after {
@@ -402,7 +403,7 @@
   }
 
   .about-section-5 h2 {
-    text-align: left;
+    text-align: right;
   }
 
   .about-section-5 h2::after {
@@ -785,6 +786,24 @@
     .main-content .banner {
       background-size: auto 100%;
     }
+
+    
+   .main-content p {
+      font-size: 14pt!important;
+    }
+
+    .main-content h2 {
+      font-size: 24pt!important;
+    }
+
+    .main-content h3 {
+      font-size: 24pt!important;
+    }
+
+    .main-content .big-number {
+      font-size: 100pt!important;
+      line-height: normal!important;
+    }
   }
 
   @media screen and (min-width: 2000px) {
@@ -865,6 +884,18 @@
       padding: 40px;
     }
   }
+
+  
+  @media screen and (max-width: 1600px) {
+    .how-it-works-holder {
+      width: 95%!important;
+    }
+  
+    .membership-holder {
+      width: 95%!important;
+    }
+  
+  }
 </style>
 
 <!-- Copy content into your platform -->
@@ -899,48 +930,49 @@
         />
       </svg>
 
-      <p>
-        Get inspired to experience Saudi like never before! Saudi Rewards is
-        Saudi's newest, completely free, first-of-its-kind national rewards
-        program. You can earn and redeem points on tourism events and curated
-        travel deals through our partners, get exclusive unmatched experiences,
-        and offers such as discounts on shopping, dining, excursions and
-        entertainment.
+      <p dir="rtl" lang="ar" >
+   استلهم تجربة سعودية تحلق بك فوق الخيال!
+مكافآت السعودية هو أول برنامج وطني مجاني في السعودية. . تقدر تكسب وتستبدل النقاط من خلال البرنامج عن طريق الفعاليات السياحية وعروض السفر المصممة لتلبي احتياجاتك من خلال شركائنا. أيضاً يُتيح البرنامج تجارب حصرية جديدة، تقدر من خلالها الاستفادة من بعض العروض مثل الخصومات على كافة عمليات التسوّق والمطاعم والرحلات والترفيه.
+
       </p>
-      <p style="color: #fa783c"><b>Go more, get more.</b></p>
+      <p dir="rtl" lang="ar"  style="color: #fa783c"><b>اكتشف أكثر .. اكسب أكثر</b></p>
     </div>
   </div>
 
   <div class="how-to-join-section">
-    <h2>How to join</h2>
-    <p>
-      It's as easy as 1-2-3! Take advantage of exclusive benefits by joining
-      Saudi Rewards today!
+    <h2 dir="rtl" lang="ar" >كيف تنضم لـبرنامج مكافآت السعودية</h2>
+    <p dir="rtl" lang="ar" >
+     سهلة جداً مثل 1-2-3!  
     </p>
 
     <div class="big-number-holder">
       <div>
-        <div class="big-number">1</div>
-        <div class="description">Click the “Join Now” button</div>
+        <div class="big-number last">1</div>
+        <div class="description">اضغط على زر "التسجيل"</div>
       </div>
       <div>
         <div class="big-number">2</div>
-        <div class="description">Fill out your required information</div>
+        <div class="description"> اكتب المعلومات المطلوبة</div>
       </div>
       <div>
-        <div class="big-number last">3</div>
-        <div class="description">Click submit and get going</div>
+        <div class="big-number">3</div>
+        <div class="description">اضغط على "تقديم" وانطلق</div>
       </div>
     </div>
 
     <div class="big-number-button">
-      <a href="https://b2c.goloyalty.com/au/login/">Join Now</a>
+      <a href="https://b2c.goloyalty.com/au/login/"
+      onclick="dataLayer.push({
+event:'join_now',
+});"
+
+      >سجّل الآن </a>
     </div>
   </div>
 
   <div class="about-section-2">
     <div class="how-it-works-holder">
-      <h2>How it Works</h2>
+      <h2 dir="rtl" lang="ar" >كيف يعمل البرنامج ؟</h2>
 
       <div class="container-t">
         <!-- Go Earn -->
@@ -986,10 +1018,16 @@
           </div>
 
           <div class="body">
-            <h3>Earn</h3>
-            <p>Earn when you spend with our tourism and travel partners.</p>
+            <h3> اكسب النقاط</h3>
+            <p dir="rtl" lang="ar" >اكسب مكافآت ونقاط واستمتع بكل تجاربك مع الفعاليات الخاصة بشركاء البرنامج في السياحة والسفر.</p>
 
-            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-earn/">Learn More</a>
+            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-earn/"
+            onclick="dataLayer.push({
+event:'learn_more',
+section_name:'How It Works',
+card_title:'Earn'
+});"
+            > اعرف أكثر </a>
           </div>
         </div>
         <!-- Go Redeem -->
@@ -1037,12 +1075,18 @@
           </div>
 
           <div class="body">
-            <h3>Redeem</h3>
-            <p>
-              Redeem points on event tickets and curated tourism experiences.
-            </p>
-
-            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-redeem/">Learn More</a>
+            <h3> استبدل النقاط</h3>
+            <p dir="rtl" lang="ar" >
+استبدل النقاط لشراء تذاكر الفعاليات والتجارب السياحية المتميزة.             </p>
+ <br>
+            <br>
+            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-redeem/"
+            onclick="dataLayer.push({
+event:'learn_more',
+section_name:'How It Works',
+card_title:'Redeem'
+});"
+            >اعرف أكثر </a>
           </div>
         </div>
         <!-- Go Offers -->
@@ -1103,13 +1147,19 @@
           </div>
 
           <div class="body">
-            <h3>Offers</h3>
-            <p>
-              Act fast on limited-time promotions and upgrades from our
-              partners.
+            <h3>العروض</h3>
+            <p dir="rtl" lang="ar" >
+              استكشف العروض والخصومات الخاصة المقدمة من شركائنا
             </p>
-
-            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-offers/">Learn More</a>
+ <br>
+            <br>
+            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-offers/"
+            onclick="dataLayer.push({
+event:'learn_more',
+section_name:'How It Works',
+card_title:'Offers'
+});"
+            >اعرف أكثر</a>
           </div>
         </div>
         <!-- Go Shop -->
@@ -1185,13 +1235,18 @@
           </div>
 
           <div class="body">
-            <h3>Benefits</h3>
-            <p>
-              Unlock experiences money can't buy with member-only offers and
-              deals.
+            <h3> المزايا</h3>
+            <p dir="rtl" lang="ar" >
+             احصل على مزايا خاصة وحصرية لأعضاء مكافآت السعودية من شركاء الفعاليات السياحية
             </p>
 
-            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-benefits/">Learn More</a>
+            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-benefits/"
+            onclick="dataLayer.push({
+event:'learn_more',
+section_name:'How It Works',
+card_title:'Benefits'
+});"
+            > اعرف أكثر </a>
           </div>
         </div>
       </div>
@@ -1201,35 +1256,34 @@
   <div class="how-to-earn-points">
     <div class="online">
       <div class="online-holder">
-        <h2>How to earn points online</h2>
+        <h2 dir="rtl" lang="ar" > كيف تكسب النقاط أونلاين؟</h2>
         <div class="img">
           <img
             src="https://image.iventurecard.com/images/static/static-asset-1@3x-28112023151909.png"
             alt=""
           />
         </div>
-        <p>
-          Start earning points from our website when you spend on travel
-          packages or through tourism partners. Just log in to your account and
-          add items to your cart on eligible partners' websites. Once you've
-          made your purchase, your points will be added to your account.
+        <p dir="rtl" lang="ar" >
+         ابدأ بكسب النقاط من لحظة شراء باقات السفر عن طريق موقعنا أو من خلال شركاؤنا في الفعاليات السياحية.
+ادخل على حسابك وأضف مشترياتك بالسلة، وبمجرد إتمام الشراء، نقاطك تضاف لحسابك.
+
         </p>
       </div>
     </div>
 
     <div class="in-store">
       <div class="in-store-holder">
-        <h2>How to Earn Points in Store</h2>
+        <h2 dir="rtl" lang="ar" >كيف تكسب النقاط لدى المتاجر؟</h2>
         <div class="img">
           <img
             src="https://image.iventurecard.com/images/static/static-asset-2@3x-28112023151926.png"
             alt=""
           />
         </div>
-        <p>
-          It's never been easier to earn while you shop. Simply show your Saudi
-          Rewards digital card or membership number when you pay at any
-          participating partner, and your points will be added to your account.
+        <p dir="rtl" lang="ar" >
+           مافيه أسهل من كسب النقاط وإنت تشتري اللي تحبّه.
+أظهر بطاقة مكافآت السعودية الرقمية أو الرقم الخاص فيها عند المحلّات المشاركة في البرنامج، وبعد الشراء نقاطك تضاف لحسابك
+
         </p>
       </div>
     </div>
@@ -1237,7 +1291,7 @@
 
   <div class="about-section-5">
     <div class="membership-holder">
-      <h2>Membership Tiers</h2>
+      <h2 dir="rtl" lang="ar" > فئات العضوية</h2>
 
       <div class="container-t">
         <!-- Bronze -->
@@ -1301,10 +1355,8 @@
             </svg>
           </div>
 
-          <p>
-            Start at Silver and earn points, benefits and offers from the moment
-            you sign up. It’s free to join and only gets better the further you
-            go.
+          <p dir="rtl" lang="ar" >
+            ابدأ بالفئة الفضية واكسب النقاط والمكافآت من لحظة تسجيلك. يمكنك الانضمام مجانًا وكل ما ارتقى تصنيفك كل ما كسبت أكثر.
           </p>
         </div>
         <div class="membership-tier-card">
@@ -1314,6 +1366,7 @@
               id="Artwork"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 158.74 43.37"
+              style="height: 35px;margin-bottom:-5px;"
             >
               <defs>
                 <style>
@@ -1330,11 +1383,8 @@
             </svg>
           </div>
 
-          <p>
-            Advance to Gold once you spend SAR 25,000 on eligible purchases. At
-            this level, you’ll earn 1.5 Saudi points for every SAR1 spent, and
-            your points remain valid for 24 Months.
-          </p>
+          <p dir="rtl" lang="ar" >
+إذا إجمالي مصروفاتك السنوية على الفعاليات السياحية وباقات السفر كان 25,000  ريال أو أكثر ستتم ترقيتك للفئة الذهبية وبتحصل على مزايا وخصومات وعروض أكثر. وبتكسب 1.5 نقطة مقابل كل ريال سعودي تصرفه وستبقى نقاطك صالحة لمدة 24 شهرًا.          </p>
         </div>
         <div class="membership-tier-card">
           <div class="card-t">
@@ -1359,10 +1409,8 @@
             </svg>
           </div>
 
-          <p>
-            Reach Platinum once you spend SAR 50,000 on eligible purchases. At
-            this level, you’ll earn 2 Saudi points for every SAR1 spent, and
-            your points remain valid for 30 Months.
+          <p dir="rtl" lang="ar" >
+            إذا إجمالي مصروفاتك السنوية على الفعاليات السياحية وباقات السفر كان 50,000  ريال أو أكثر ستتم ترقيتك للفئة البلاتينية اللي بتعطيك مزايا إضافية، بتكسب في هذه الفئة عدد 2 نقطة مقابل كل ريال سعودي تصرفه وستبقى نقاطك صالحة لمدة 30 شهرًا. 
           </p>
         </div>
         <div class="membership-tier-card">
@@ -1423,10 +1471,8 @@
             </svg>
           </div>
 
-          <p>
-            Achieve Black status once you spend SAR 250,000 on eligible
-            purchases. At this elite level, you’ll earn 3 Saudi points for every
-            SAR1 spent, and your points remain valid for 36 Months.
+          <p dir="rtl" lang="ar" >
+           إذا إجمالي مصروفاتك السنوية على الفعاليات السياحية وباقات السفر كان 250,000  ريال أو أكثر ستتم ترقيتك للفئة الأعلى البلاك اللي بتعطيك مزايا إضافية، بتكسب في هذه الفئة عدد 3 نقاط مقابل كل ريال سعودي تصرفه وستبقى نقاطك صالحة لمدة 36 شهرًا.
           </p>
         </div>
       </div>

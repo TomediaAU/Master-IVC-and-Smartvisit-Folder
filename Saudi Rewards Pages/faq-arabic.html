@@ -1005,6 +1005,16 @@
         // Prevent default link behavior
         e.preventDefault();
 
+        
+        // Get the text content of the clicked menu-t item
+        const sectionName = e.target.textContent.trim();
+
+        // Send the event to the dataLayer
+        dataLayer.push({
+          event: 'menu_click',
+          section_name: sectionName
+        });
+
         // Get the data-tab-t attribute value of the clicked menu-t item
         const tabId = e.target.getAttribute("data-tab-t");
 

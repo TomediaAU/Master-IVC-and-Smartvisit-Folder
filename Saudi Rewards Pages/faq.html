@@ -535,7 +535,7 @@
       <div>
         <p class="body-content-t">
           A tourism event is an event or initiative done by one of our
-          participating ttourism entities and/or partners. Travel purchases
+          participating tourism entities and/or partners. Travel purchases
           include journeys and accommodations, while lifestyle purchases include
           everyday activities, such as shopping and dining.
         </p>
@@ -766,7 +766,7 @@
       <div>
         <p class="body-content-t">
           As a Saudi Rewards member, you’re in good company. View all
-          participating partners and offers on the Rewards page . Who knows —
+          participating partners and offers on the Rewards page. Who knows —
           taking a look at your options might even inspire you to try something
           new!
         </p>
@@ -777,8 +777,7 @@
       <div>
         <p class="body-content-t">
           Points are valid for different amounts of time, depending on your
-          Saudi Rewards tier. To find out more, visit the Membership Tiers page
-          .
+          Saudi Rewards tier. To find out more, visit the Membership Tiers page.
         </p>
       </div>
 
@@ -808,7 +807,7 @@
       <div>
         <p class="body-content-t">
           Saudi Rewards redemption partners are so special, we can’t tell you
-          about them here. But visit the Rewards pag e, and you can explore them
+          about them here. But visit the Rewards page, and you can explore them
           all.
         </p>
       </div>
@@ -818,7 +817,7 @@
       <h2>Do you have any other redemption partners?</h2>
       <div>
         <p class="body-content-t">
-          All redemption partners are listed on the Rewards page . Check it out
+          All redemption partners are listed on the Rewards page. Check it out
           to explore all of your redemption options.
         </p>
       </div>
@@ -884,9 +883,9 @@
           Saudi Rewards has four tiers: Silver, Gold, Platinum and Black. Want
           to make it all the way to Black? The more you spend with eligible
           tourism partners, curated experiences offered by our partners, or
-          Saudi City Passes , the higher status you’ll earn — and the more
+          Saudi City Passes, the higher status you’ll earn — and the more
           member benefits you’ll receive! For more information, visit the
-          Membership Tiers page .
+          Membership Tiers page.
         </p>
       </div>
 
@@ -897,7 +896,7 @@
         <p class="body-content-t">
           You’ll love the points benefits of Saudi Rewards at the Silver
           Membership Tier, and they only get better from there. Visit the
-          Membership Tiers pag e to learn more about the benefits of being a
+          Membership Tiers page to learn more about the benefits of being a
           Silver, Gold, Platinum or Black Member.
         </p>
       </div>
@@ -911,7 +910,7 @@
           You will never be downgraded more than one tier status. Further, as
           long as you keep spending at your tier’s threshold with eligible
           tourism partners, curated experiences offered by our partners, or
-          Saudi City Passes , you can maintain your tier and benefits.
+          Saudi City Passes, you can maintain your tier and benefits.
         </p>
       </div>
 
@@ -1023,6 +1022,15 @@
         // Prevent default link behavior
         e.preventDefault();
 
+        // Get the text content of the clicked menu-t item
+        const sectionName = e.target.textContent.trim();
+
+        // Send the event to the dataLayer
+        dataLayer.push({
+          event: 'menu_click',
+          section_name: sectionName
+        });
+
         // Get the data-tab-t attribute value of the clicked menu-t item
         const tabId = e.target.getAttribute("data-tab-t");
 
@@ -1036,6 +1044,8 @@
         });
 
         // Add active class to clicked menu-t item and corresponding tab-t
+
+        
         e.target.classList.add("active");
         document.getElementById(tabId).classList.add("active");
       });

@@ -703,6 +703,7 @@
     .how-to-earn-points .in-store .in-store-holder {
       margin: 0;
     }
+
   }
 
   @media screen and (max-width: 1000px) {
@@ -844,6 +845,24 @@
     .main-content .big-number::after {
       content: none;
     }
+
+   .main-content p {
+      font-size: 14pt!important;
+    }
+
+    .main-content h2 {
+      font-size: 24pt!important;
+    }
+
+    .main-content h3 {
+      font-size: 24pt!important;
+    }
+
+    .main-content .big-number {
+      font-size: 100pt!important;
+      line-height: normal!important;
+    }
+    
   }
 
   @media screen and (max-width: 400px) {
@@ -863,6 +882,17 @@
 
     .main-content .how-to-join-section {
       padding: 40px;
+    }
+  }
+
+
+  @media screen and (max-width: 1600px) {
+    .how-it-works-holder {
+      width: 95%!important;
+    }
+
+    .membership-holder {
+      width: 95%!important;
     }
   }
 </style>
@@ -934,7 +964,11 @@
     </div>
 
     <div class="big-number-button">
-      <a href="https://b2c.goloyalty.com/au/login/">Join Now</a>
+      <a href="https://b2c.goloyalty.com/au/login/"
+      onclick="dataLayer.push({
+      event:'join_now',
+      });"
+      >Join Now</a>
     </div>
   </div>
 
@@ -988,8 +1022,16 @@
           <div class="body">
             <h3>Earn</h3>
             <p>Earn when you spend with our tourism and travel partners.</p>
+            <br>
+            <br>
 
-            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-earn/">Learn More</a>
+            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-earn/"
+            onclick="dataLayer.push({
+event:'learn_more',
+section_name:'How It Works',
+card_title:'Earn'
+});"
+            >Learn More</a>
           </div>
         </div>
         <!-- Go Redeem -->
@@ -1041,8 +1083,15 @@
             <p>
               Redeem points on event tickets and curated tourism experiences.
             </p>
-
-            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-redeem/">Learn More</a>
+ <br>
+            <br>
+            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-redeem/"
+            onclick="dataLayer.push({
+event:'learn_more',
+section_name:'How It Works',
+card_title:'Redeem'
+});"
+            >Learn More</a>
           </div>
         </div>
         <!-- Go Offers -->
@@ -1108,8 +1157,15 @@
               Act fast on limited-time promotions and upgrades from our
               partners.
             </p>
-
-            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-offers/">Learn More</a>
+ <br>
+            <br>
+            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-offers/"
+            onclick="dataLayer.push({
+event:'learn_more',
+section_name:'How It Works',
+card_title:'Offers'
+});"
+            >Learn More</a>
           </div>
         </div>
         <!-- Go Shop -->
@@ -1191,7 +1247,13 @@
               deals.
             </p>
 
-            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-benefits/">Learn More</a>
+            <a href="https://b2c.goloyalty.com/au/sa+riyadh/go-collections/go-benefits/"
+            onclick="dataLayer.push({
+event:'learn_more',
+section_name:'How It Works',
+card_title:'Benefits'
+});"
+            >Learn More</a>
           </div>
         </div>
       </div>
@@ -1304,7 +1366,8 @@
           <p>
             Start at Silver and earn points, benefits and offers from the moment
             you sign up. It’s free to join and only gets better the further you
-            go.
+            go. You’ll earn 1 Saudi point for every SAR1 spent, and your points remain valid for 18 
+months.
           </p>
         </div>
         <div class="membership-tier-card">
@@ -1314,6 +1377,7 @@
               id="Artwork"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 158.74 43.37"
+              style="height: 35px;margin-bottom:-5px;"
             >
               <defs>
                 <style>
