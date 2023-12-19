@@ -24,8 +24,29 @@
     cursor: pointer;
   }
 
+  .faq h1:hover {
+    color: #005eb8;
+  }
+
+  .faq h1::after {
+  }
+
+  h1::after {
+    float: right;
+    color: #005eb8;
+    content: " +";
+  }
+
+  h1.show-plus::after {
+    content: "+";
+  }
+
+  h1.show-minus::after {
+    content: "-";
+  }
+
   .side {
-    width: 50%
+    width: 50%;
   }
 
   @media screen and (max-width: 768px) {
@@ -40,13 +61,6 @@
     <div class="faq">
       <h1 id="cat1" class="">General</h1>
       <div id="cattxt1" class="txt hidden">
-        
-        <h5>Q: How can we obtain individual passes/tickets?</h5>
-        <p>
-          A: For individual passes/tickets please purchase all your tickets
-          separately when booking.
-        </p>
-        <hr />
         <h5>
           Q: Are any bulk purchase or concession card holder discounts
           available?
@@ -57,7 +71,10 @@
         </p>
         <hr />
         <h5>Q: Can I visit the different attractions on separate days?</h5>
-        <p>A: Yes, you can visit the attractions on the days that suit you</p>
+        <p>
+          A: Yes, you can visit the attractions on the days that suit you, with
+          up to 12 months to use the pass.
+        </p>
         <hr />
         <h5>Q: Can I revisit the attractions for free?</h5>
         <p>
@@ -67,12 +84,9 @@
         <hr />
         <h5>Q: Can I get pickup up from my accommodation?</h5>
         <p>
-          A: At the moment we do not currently offer pickup services, however if
-          you visit
-          <a href="http://www.bestof.com.au/vic/tours.aspx"
-            >www.bestof.com.au</a
-          >
-          there are tours that do
+          A: At the moment we do not currently offer pickup services. However,
+          there is a local taxi service, hire cars and e-bikes available on
+          Phillip Island.
         </p>
         <hr />
         <h5>Q: Is the PIE Pass the same as the Nature Parks “3 Park Pass”?</h5>
@@ -80,8 +94,11 @@
         <hr />
         <h5>Q: Is each attraction Pram and Wheelchair friendly?</h5>
         <p>
-          A: Most are, however some areas in the attractions do cause minor
-          difficulties please check with the attractions you choose to visit.
+          A: Most are, however, some areas in the attractions do cause minor
+          difficulties please check directly with the attraction you choose to
+          visit. <br /><br />
+          In regard to any cruises, wheelchair access is unavailable due to
+          jetty stairs
         </p>
         <hr />
         <h5>
@@ -118,7 +135,7 @@
           >
         </p>
       </div>
-      <h1 id="cat9">Location</h1>
+      <!-- <h1 id="cat9">Location</h1>
       <div id="cattxt9" class="txt hidden">
         
         <h5>Q: Where is Phillip Island Located?</h5>
@@ -159,11 +176,10 @@
             >www.visitphillipisland.com</a
           >
         </p>
-      </div>
+      </div> -->
       <h1 id="cat2">Bookings/Tickets</h1>
       <div id="cattxt2" class="txt hidden">
-       
-        <h5>Q: Where can I buy a retail PIE pass?</h5>
+        <!-- <h5>Q: Where can I buy a retail PIE pass?</h5>
         <p>
           A: Newhaven/Cowes Information Centres, Best of Victoria
           in&nbsp;Federation&nbsp;Square Melbourne and from any of the
@@ -172,8 +188,8 @@
             >listed here</a
           >&nbsp;on Phillip Island.
         </p>
-        <hr />
-        <h5>
+        <hr /> -->
+        <!-- <h5>
           Q: Where can I exchange my online purchase voucher for a PIE pass?
         </h5>
         <p>
@@ -194,17 +210,14 @@
           A: Preferably a printed out copy of the email receipt, digital
           versions are also acceptable
         </p>
-        <hr />
+        <hr /> -->
         <h5>Q: When is my ticket valid from?</h5>
-        <p>
-          A: From the date selected on our booking system or if retail the date
-          of purchase
-        </p>
+        <p>A: Your ticket is valid from the date of purchase</p>
         <hr />
         <h5>Q: How long is my ticket valid for?</h5>
-        <p>A: 12 months</p>
+        <p>A: All tickets are valid for 12 months</p>
         <hr />
-        <h5>
+        <!-- <h5>
           Q: What are these start/finish dates I see on my online booking, are
           they relevant?
         </h5>
@@ -213,17 +226,26 @@
           the tickets are valid and usable anytime in the 12 months on and after
           those dates
         </p>
-        <hr />
+        <hr /> -->
         <h5>Q: what are the child ages?</h5>
         <p>A: Ages 4-15 yrs</p>
         <hr />
-        <h5>Q: what if my child is under 4?</h5>
-        <p>A: If they are under 4 years old they are free</p>
+        <h5>Q: what if my child is under 3?</h5>
+        <p>
+          A:If they are 3 and under they will have free entry the PIE
+          attractions. <br /><br />
+          In regard to any cruises, please contact Wildlife Coast Cruises to add
+          an infant to your booking. In regard to Clip ‘N Climb all climbers are
+          required to be at least 15 kilograms.
+        </p>
         <hr />
         <h5>Q: If I have any problems with my booking who should I contact?</h5>
         <p>
           A: Either the person that issued you the PIE pass or our customer
-          service info@phillipislandexperience.com.au
+          service
+          <a href="mailto:info@phillipislandexperience.com.au"
+            >info@phillipislandexperience.com.au</a
+          >
         </p>
       </div>
     </div>
@@ -232,7 +254,7 @@
   <!-- Second Content Section  -->
   <div class="side">
     <div class="faq">
-      <h1 id="cat3" class="">A Maze’N Things</h1>
+      <!-- <h1 id="cat3" class="">A Maze’N Things</h1>
       <div id="cattxt3" class="txt hidden">
        
         <h5>Q: Where is A Maze’N Things located?</h5>
@@ -295,13 +317,12 @@
           A:
           <a href="http://www.amazenthings.com.au/">www.amazenthings.com.au</a>
         </p>
-      </div>
+      </div> -->
       <h1 id="cat4">Maru koala &amp; Animal Park</h1>
       <div id="cattxt4" class="txt hidden">
-       
         <h5>Q: Where is Maru koala &amp; Animal Park located?</h5>
         <p>
-          A: 1650 Bass Hwy Grantville, Victoria for more information visit the
+          A: 1650 Bass Hwy Grantville, Victoria. For more information visit the
           <a
             title="Location"
             href="https://phillipislandexperience.com.au/location/"
@@ -328,7 +349,7 @@
         <h5>Q: Do I have to pre book beforehand?</h5>
         <p>A: No</p>
         <hr />
-        <h5>Q: What Bonus Offers are Included?</h5>
+        <!-- <h5>Q: What Bonus Offers are Included?</h5>
         <p>
           A: receive a 10% discount on Pirate Petes Mini-Golf.<br />
           20% off entry to the National Vietnam Veterans Museum.
@@ -339,7 +360,7 @@
           A: Yes, if you have booked online we can present you with your PIE
           pass
         </p>
-        <hr />
+        <hr /> -->
         <h5>
           Q: Where can I get more information about Maru koala &amp; Animal
           Park?
@@ -353,7 +374,6 @@
       </div>
       <h1 id="cat5">Pannys Amazing World of Chocolate</h1>
       <div id="cattxt5" class="txt hidden">
-        
         <h5>Q: Where is Pannys Amazing World of Chocolate Park located?</h5>
         <p>
           A: 930 Phillip Island Rd Newhaven, Victoria for more information visit
@@ -379,8 +399,8 @@
         <hr />
         <h5>Q: when is Pannys Amazing World of Chocolate open?</h5>
         <p>
-          A: 7 days a week from 9am to 5.30pm<br />(During May 4th – 26th, 5
-          days Thursday – Monday)
+          A: 7 days a week from 10am to 5pm<br />
+          <em>Varies in off peak times, please check</em>
         </p>
         <hr />
         <h5>Q: Are there any specific sessions times?</h5>
@@ -389,21 +409,19 @@
         <h5>Q: Do I have to pre book beforehand?</h5>
         <p>
           A: We do recommend pre-booking your attendance to reduce waiting time
-          as the Chocolate Experience has a limited capacity call, 03 5956 6600.
+          as the Chocolate Experience has a limited capacity. Call, 03 5956
+          6600.
         </p>
         <hr />
         <h5>Q: What bonus offers are there?</h5>
-        <p>
-          A: 1 x Free chocolate bar entrance ticket.<br />
-          20% off entry to the National Vietnam Veterans Museum.
-        </p>
+        <p>A: 1 x Free chocolate bar entrance ticket.</p>
         <hr />
-        <h5>Q: Can I pickup my online PIE ticket there?</h5>
+        <!-- <h5>Q: Can I pickup my online PIE ticket there?</h5>
         <p>
           A: Yes, if you have booked online we can present you with your PIE
           pass
         </p>
-        <hr />
+        <hr /> -->
         <h5>
           Q: Where can I get more information about Pannys Amazing World of
           Chocolate?
@@ -417,14 +435,8 @@
       </div>
       <h1 id="cat8">Penguin Parade</h1>
       <div id="cattxt8" class="txt hidden">
-        
-        <h5>Q: Do I need my PIE pass ticket before visiting the Penguins?</h5>
-        <p>
-          A: Yes, The Penguin parade requires a PIE pass number as proof of
-          purchase. Please note if you are purchasing an online you need to
-          change your purchase voucher for a ticket at one of our other
-          attractions before visiting the Penguin Parade
-        </p>
+        <h5>Q: Do I need my PIE pass e-ticket before visiting the Penguins?</h5>
+        <p>A: Yes, pre-booking is required</p>
         <hr />
         <h5>Q: Where is Penguin Parade located?</h5>
         <p>
@@ -437,7 +449,7 @@
         </p>
         <hr />
         <h5>
-          Q: What is include in the Penguin &amp; PIE and the Penguins, Seals
+          Q: What is included in the Penguin &amp; PIE and the Penguins, Seals
           &amp; PIE Passes for Penguin Parade?
         </h5>
         <p>
@@ -469,10 +481,7 @@
         </p>
         <hr />
         <h5>Q: What bonus offers are there?</h5>
-        <p>
-          A: Receive a discount to ‘Penguins Plus’.<br />
-          20% off entry to the National Vietnam Veterans Museum.
-        </p>
+        <p>A: Receive a discount to ‘Penguins Plus’.</p>
         <hr />
         <h5>Q: Can I pickup my online PIE ticket there?</h5>
         <p>A: No</p>
@@ -491,19 +500,22 @@
         <h5>Q: Where can I get more information about Penguin Parade?</h5>
         <p>A: <a href="http://www.penguins.org.au/">www.penguins.org.au</a></p>
       </div>
-      <h1 id="cat7">Wildlife Coast Cruises</h1>
+      <h1 id="cat7">Cape Cruise (Wildlife Coast Cruises)</h1>
       <div id="cattxt7" class="txt hidden">
-        
         <h5>Q: Do I need a Boarding Pass?</h5>
         <p>
-          Yes, Customers must pick up a Boarding Pass from the cruise
-          office(Yellow Rotunda near the Cowes jetty) before going to the Boat
-          ,the PIE pass is not a Boarding pass.
+          Once you have purchased your PIE pass and booked for your selected
+          time/date you will be issued with an e-ticket confirmation, this is
+          all you will require on boarding. <br /><br />
+          NOTE: It is important to contact Wildlife Coast Cruises on 1300 763
+          739 or info@wildlifecoastcruises.com.au if you have any infants in
+          your group, as capacity is limited.
         </p>
         <hr />
-        <h5>Q: Where is Wild Life Coast Cruises located?</h5>
+        <h5>Q: Where does the Seal Cruise Depart?</h5>
         <p>
-          A: 11-13 The Esplanade Cowes, Victoria for more information visit the
+          A: San Remo Jetty, 170 Marine Parade Victoria for more information
+          visit the
           <a
             title="Location"
             href="https://phillipislandexperience.com.au/location/"
@@ -515,14 +527,14 @@
           Q: What is include in the Seals &amp; PIE Pass and Penguins Seals
           &amp; PIE Pass for Wild Life Coast Cruises?
         </h5>
-        <p>A: 2 hour cruise to Seal Rocks</p>
+        <p>A: 1 hour Cape Cruise</p>
         <hr />
         <h5>Q: Approximately how long will those activities take?</h5>
-        <p>A: 2 hours</p>
+        <p>A: 1 hour, <em> please arrive 30 mins prior to departure</em></p>
         <hr />
-        <h5>Q: when do these Seal Cruises go?</h5>
+        <h5>Q: when do these Cape Cruises go?</h5>
         <p>
-          A: Generally Daily at 2pm, depending on the time of year check
+          A: 10:45am Sun, Tues, Wed, Fri - Daily over summer peak season
           <a
             title="http://www.wildlifecoastcruises.com.au/"
             href="http://www.wildlifecoastcruises.com.au/"
@@ -532,53 +544,25 @@
         </p>
         <hr />
         <h5>Q: Do I have to pre book beforehand?</h5>
-        <p>
-          A: Yes it is recommended but not essential and is highly recommended
-          in the summer months(December, January)
-        </p>
+        <p>A: Yes</p>
         <hr />
         <h5>Q: Will the cruise always run?</h5>
         <p>
-          A: No, the cruises are weather dependant and in winter sometimes
-          passenger dependant, So it would be advised to contact Wild Life Coast
-          Cruises close to the dates you want to go, you can call them on 1300
-          763 739
+          A: Cape cruises will run the vast majority of the time however they
+          are subject to weather conditions and minimum numbers. If you have any
+          questions in regard to this, please contact Wildlife Coast Cruises.
         </p>
         <hr />
         <h5>Q: Where do the cruise run from?</h5>
+        <p>A: San Remo Jetty, located at 170 Marine Parade San Remo</p>
+        <hr />
+        <h5>Q: What bonus offers are there for the PIE pass?</h5>
         <p>
-          A:
-          <a
-            title="Cowes Jetty"
-            href="https://maps.google.com/maps?hl=en&amp;q=cowes+jetty&amp;ie=UTF-8&amp;ei=WUdqUO_DE66uiQfcsoHoAg&amp;ved=0CAgQ_AUoAg"
-            >Cowes jetty</a
-          >, located on Phillip Island
+          A: 10% off Souvenirs & all other Wildlife Coast Cruises tours while
+          pass is active.
         </p>
         <hr />
-        <h5>
-          Q: What bonus offers are there for Seals &amp; PIE Pass and Penguins
-          Seals &amp; PIE Pass for Wild Life Coast Cruises ?
-        </h5>
-        <p>
-          A: 20% off Souvenirs.<br />
-          20% off entry to the National Vietnam Veterans Museum.
-        </p>
-        <hr />
-        <h5>
-          Q: What bonus offers are there for PIE Pass and Penguins &amp; PIE
-          Pass for Wild Life Coast Cruises ?
-        </h5>
-        <p>
-          A: 20% off Seal Crusies.<br />
-          20% off entry to the National Vietnam Veterans Museum.
-        </p>
-        <hr />
-        <h5>Q: Can I pickup my online PIE ticket there?</h5>
-        <p>
-          A: Yes, if you have booked online we can present you with your PIE
-          pass
-        </p>
-        <hr />
+
         <h5>
           Q: Where can I get more information about Wild Life Coast Cruises?
         </h5>
@@ -589,15 +573,69 @@
           >
         </p>
       </div>
+      <h1 id="cat10">Phillip Island Seal Cruise (Wildlife Coast Cruises)</h1>
+      <div id="cattxt10" class="txt hidden">
+        <h5>Q: Do I need a Boarding Pass?</h5>
+        <p>
+          Once you have purchased your PIE pass and booked for your selected
+          time/date you will be issued with an e-ticket confirmation, this is
+          all you will require on boarding. <br /><br />
+          NOTE: It is important to contact Wildlife Coast Cruises on 1300 763
+          739 or info@wildlifecoastcruises.com.au if you have any infants in
+          your group, as capacity is limited.
+        </p>
+        <hr />
+
+        <h5>Q: Where does the Seal Cruise Depart?</h5>
+        <p>
+          A: San Remo Jetty, 170 Marine Parade Victoria for more information visit the locations page
+          <a
+            title="Location"
+            href="https://phillipislandexperience.com.au/location/"
+            >locations page</a
+          >
+
+        </p>
+        <hr />
+        <h5>
+          Q: What is include in the Seals & PIE Pass and Penguins Seals & PIE Pass for Wildlife Coast Cruises?
+        </h5>
+        <p>A: 2 hour cruise to Seal Rocks</p>
+        <hr />
+        <h5>Q: Approximately how long will those activities take?</h5>
+        <p>A: 2 hours, <em> please arrive 30 mins prior to departure</em></p>
+        <hr />
+        <h5>Q: when does the Phillip Island Seal Cruise run?</h5>
+        <p>Daily at 2pm, weather conditions allowing.</p>
+        <hr />
+        <h5>Q: Do I have to pre book beforehand?</h5>
+        <p>A: Yes</p>
+        <hr />
+        <h5>Q: Will the cruise always run?</h5>
+        <p>
+          A: Phillip Island Seal cruises will run the majority of the time however they are subject to weather conditions and minimum numbers. If you have any questions in regard to this, please contact Wildlife Coast Cruises.
+        </p>
+        <hr />
+        <h5>Q: What bonus offers are there for Seals & PIE Pass and Penguins Seals & PIE Pass for Wildlife Coast Cruises? </h5>
+        <p>A: 10% off Souvenirs & all other Wildlife Coast Cruises tours while pass is active.</p>
+        <hr />
+        <h5>Q: Where can I get more information about Wild Life Coast Cruises?</h5>
+        <p>
+          A:
+          <a href="http://www.wildlifecoastcruises.com.au/"
+            >www.wildlifecoastcruises.com.au</a
+          >
+        </p>
+      </div>
+
       <h1 id="cat6">Clip ‘n Climb Phillip Island</h1>
       <div id="cattxt6" class="txt hidden">
-        <h5>Q: What is inclued in Clip ‘n Climb Phillip Island?</h5>
+        <h5>Q: What is included in Clip ‘n Climb Phillip Island?</h5>
         <p>A: 1 Hour of Climbing plus Safety Briefing</p>
         <hr />
         <h5>Q: Where is Clip ‘n Climb Phillip Island located?</h5>
         <p>
-          A: 6-8 Industrial Way, Cowes 3922 Victoria for more information visit
-          the
+          A: 6-8 Industrial Way, Cowes 3922 Victoria for more information visit the 
           <a
             title="Location"
             href="https://phillipislandexperience.com.au/location/"
@@ -610,13 +648,12 @@
         <hr />
         <h5>Q: Do I have to pre book beforehand?</h5>
         <p>
-          A: Yes it is recommended but not essential and is highly recommended
-          in the summer months(December, January)
+          A: Yes, it is advisable, but not essential, however is highly recommended in the peak times over summer months (December, January)
         </p>
         <hr />
         <h5>Q: Are there any safety reqiuremnts?</h5>
         <p>
-          For more safety information visit
+          For more safety information visit 
           <a
             href="http://www.islandclipnclimb.com.au/safety"
             rel="noopener"
@@ -639,10 +676,19 @@
       // Find the corresponding content (next sibling)
       const content = h1Element.nextElementSibling;
 
-     
-
       // Toggle the "hidden" class to show/hide the content
       content.classList.toggle("hidden");
+
+      // Change the + to a - or vice versa
+      // Remember that it's in the h1s ::after pseudo element, so innerHTML won't work
+      // Instead, we need to change the content property of the pseudo element
+      if (content.classList.contains("hidden")) {
+        h1Element.classList.add("show-plus");
+        h1Element.classList.remove("show-minus");
+      } else {
+        h1Element.classList.add("show-minus");
+        h1Element.classList.remove("show-plus");
+      }
     });
   });
 </script>
