@@ -5,6 +5,31 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+      /* Arabic Font */
+      @font-face {
+          font-family: 'Blanka Arabic Regular';
+          font-weight: 400;
+          src: url('https://rewards.visitsaudi.com/app/font/BlankaArabic-Regular.ttf')
+      }
+
+      /* English Font */
+      @font-face {
+          font-family: 'Wicklow Medium';
+          src: url('https://rewards.visitsaudi.com/app/font/Wicklow-Medium.ttf')
+      }
+
+      .arabic_header {
+          font-family: 'Blanka Arabic Regular', 'Times New Roman', Times, serif!important;
+      }
+
+      .english_header {
+          font-family: 'Wickalow Medium', 'Times New Roman', Times, serif!important;
+      }
+
+      .responsive-table {
+        font-family: 'Blanka Arabic Regular', Arial, Helvetica, sans-serif!important;
+      }
+
       @media only screen and (max-width: 600px) {
         ul {
           list-style-type: none;
@@ -48,6 +73,27 @@
     </style>
   </head>
   <body>
+    <!-- Email preheader -->
+    <div
+      style="
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        mso-hide: all;
+        font-size: 1px;
+        line-height: 1px;
+        opacity: 0;
+        color: transparent;
+        visibility: hidden;
+        width: 0;
+      "
+    >
+      Learn about exclusive benefits for Black Rewards members like you 😎 |
+      <span dir="rtl" lang="ar">
+تعرف على المزايا الحصرية لأعضاء "فئة البلاك" الشيوخ مثلك😎
+      </span>
+    </div>
+
     <table
       class="responsive-table"
       width="600px"
@@ -139,7 +185,7 @@
               border: #fff 1px solid;
             "
           >
-            حمّل البطاقة
+        حمّل البطاقة
           </a>
         </td>
       </tr>
@@ -166,25 +212,25 @@
           <br /><br />
 
           <span
+            class="english_header"
             style="
               font-weight: bold;
               color: #000000;
               font-family: 'Times New Roman', Times, serif;
               font-size: 30px;
             "
-            >You’re officially a Saudi Rewards Black member.
+            >You’ve reached the highest status with Saudi Rewards. 
           </span>
           <br /><br />
-          As a Saudi Rewards member, you’ve already been enjoying exciting benefits like money-can’t-buy experiences, offers and exclusives with tourism, travel and lifestyle partners. But there’s so much
-more to Saudi Rewards at every tier, and you just gained access to our most premium level.
+          As a Saudi Rewards member, you’ve already been enjoying exciting benefits such as “money can’t buy” experiences and offers and exclusives with tourism, travel and lifestyle partners. But there’s so much more to Saudi Rewards at every tier, and you just gained access to our most premium level.
           <br />
           <br />
-       Starting today for one whole year, you’ll earn 3 Saudi Points for every SAR1 spent, and your points remain valid for 3 years.
+Starting today for one whole year, you’ll earn 3 Saudi Points for every SAR1 spent, and your new earned points remain valid for three years.
           <br /><br />
-         And as always, when you go more, you’ll get more. With benefits only available at your elite Saudi Rewards tier, memorable experiences await.
+         And as always, when you go more, you’ll get more. With benefits available only at your elite Saudi Rewards tier, memorable experiences await.
           <br />
           <br />
-          View special offers for Black tier Saudi Rewards members.
+          View special offers for Black Tier Saudi Rewards members.
           
           <br /><br />
 
@@ -217,39 +263,42 @@ more to Saudi Rewards at every tier, and you just gained access to our most prem
                 <img height="20px" src="img/3x/arrowblackleft.png" />
               </td>
               <td valign="middle" style="color: #000; padding-left: 5px">
-                معرّف العضوية: 12345678
+معرّف العضوية: 12345678
                 <br />
-                TIER: GOLD
+                الفئة: البلاك
               </td>
             </tr>
           </table>
           <br />
-          Congratulations (First Name)!
+ألف مبروك (الاسم الأول)! 
           <br /><br />
           <span
+          class="arabic_header"
             style="
               font-weight: bold;
               color: #000000;
               font-family: 'Times New Roman', Times, serif;
               font-size: 30px;
             "
-            >استعد لرحلتك {الاسم الأول}!</span
+            >
+أنت الآن عضو رسمي في أعلى فئة في برنامج مكافـآت السعودية.
+
+            </span
           >
           <br /><br />
-          لآن صرت عضو رسمي في برنامج مكافآت السعودية! وصار لطموحاتك في السفر
-          مجال أوسع ومكافآت أكثر. عندك الآن فرص عشان تكسب نقاط وتستبدلها في جميع
-          مناطق السعودية. لا تفوّت فرصة الاستفادة من المزايا والعروض المقدمة
-          حصرياً للأعضاء، انتهز فرصة العروض اللي بتناديك! وكل ما تحضر فعاليات
-          أكثر كل ما تزيد نقاطك اللي تقدر تستفيد منها بالشكل اللي يناسبك.
+      بما انك الآن عضو في برنامج مكافآت السعودية، فمعناته جربت واستمتعت بمزايا حماسية من شركاء الفعاليات السياحية أو السفر أو لايف ستايل. ولكن تزيد العروض والمزايا في برنامجنا كل ما ترقيت لفئة أعلى، ونبشرك ترقيت الآن لفئة التميز في برنامجنا. 
           <br /><br />
-          برنامج مكافآت السعودية بيزيد حماسك لتجارب جديدة ومغامرات مثيرة. اكسب
-          نقاط وأنت بتستكشف السعودية من خلال الفعاليات والرحلات المميزة وعروض
-          السفر والأنشطة اليومية. والأهم، أنك تقدر تستبدل النقاط حتى تستمع
-          وتستفيد أكثر بالرحلات اللي تحبها.
-          <br /><br /><br /><br /><br />
-          حمّل بطاقتك الرقمية
-          <br />
-          <br />
+       
+ابتداءً من اليوم ولمدة سنة كاملة راح تكسب ثلاث نقاط سعودية مقابل كل ريال سعودي تدفعه والنقاط الجديدة اللي راح تكسبها خلال عضويتك في فئة بلاك راح تظل صالحة تستفيد منها لمدة ثلاث سنوات.
+          <br /><br />
+
+ومثل ما عودناك كل ما ابحرت أكثر راح تحصل على مزايا أكثر متوفرة فقط لأعضاء فئة الشيوخ "البلاك" في برنامج مكافآت السعودية.
+          <br /><br>
+
+
+شاهد العروض الخاصة لأعضاء فئة البلاك.
+          <br /><br /><br /><br />
+          <br><br><br>
 
           <a
             href=""
@@ -262,7 +311,7 @@ more to Saudi Rewards at every tier, and you just gained access to our most prem
               text-decoration: none;
             "
           >
-            حمّل الآن
+شاهد العروض
           </a>
 
           <br />
@@ -284,46 +333,46 @@ more to Saudi Rewards at every tier, and you just gained access to our most prem
       >
         <td colspan="6" width="600px">
           <br />
-          <a href="" style="color: #fff; text-decoration: none"
+          <a href="https://facebook.com/SaudiRewards" style="color: #fff; text-decoration: none"
             ><img
               height="20px"
               style="padding-right: 20px"
-              src="img/3x/fb@3x.png"
+              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/fb@3x.png"
               alt=""
           /></a>
-          <a href="" style="color: #fff; text-decoration: none"
+          <a href="https://www.instagram.com/saudirewards" style="color: #fff; text-decoration: none"
             ><img
               height="20px"
               style="padding-right: 20px"
-              src="img/3x/insta@3x.png"
+              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/insta@3x.png"
               alt=""
           /></a>
-          <a href="" style="color: #fff; text-decoration: none"
+          <a href="https://twitter.com/SaudiRewards" style="color: #fff; text-decoration: none"
             ><img
               height="20px"
               style="padding-right: 20px"
-              src="img/3x/x@3x.png"
+              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/x@3x.png"
               alt=""
           /></a>
-          <a href="" style="color: #fff; text-decoration: none"
+          <a href="https://www.youtube.com/@SaudiRewards" style="color: #fff; text-decoration: none"
             ><img
               height="20px"
               style="padding-right: 20px"
-              src="img/3x/youtube@3x.png"
+              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/youtube@3x.png"
               alt=""
           /></a>
-          <a href="" style="color: #fff; text-decoration: none"
+          <a href="https://www.snapchat.com/add/saudirewards" style="color: #fff; text-decoration: none"
             ><img
               height="20px"
               style="padding-right: 20px"
-              src="img/3x/snap@3x.png"
+              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/snap@3x.png"
               alt=""
           /></a>
-          <a href="" style="color: #fff; text-decoration: none"
+          <a href="https://tiktok.com/@saudirewards" style="color: #fff; text-decoration: none"
             ><img
               height="20px"
               style="padding-right: 0"
-              src="img/3x/tiktok@3x.png"
+              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/tiktok@3x.png"
               alt=""
           /></a>
           <br />
@@ -332,7 +381,7 @@ more to Saudi Rewards at every tier, and you just gained access to our most prem
           <br />
 
           <a
-            href=""
+            href="https://www.visitsaudi.com/en/keep-in-touch-with-us/privacy-policy"
             style="
               color: #fff;
               padding-right: 20px;
@@ -342,7 +391,7 @@ more to Saudi Rewards at every tier, and you just gained access to our most prem
             >Terms and Conditions</a
           >
           <a
-            href=""
+            href="https://ssid.visitsaudi.com/"
             style="
               color: #fff;
               padding-right: 20px;
@@ -352,7 +401,7 @@ more to Saudi Rewards at every tier, and you just gained access to our most prem
             >Unsubscribe</a
           >
           <a
-            href=""
+            href="https://www.visitsaudi.com/en/keep-in-touch-with-us/privacy-policy"
             style="
               color: #fff;
               padding-right: 20px;

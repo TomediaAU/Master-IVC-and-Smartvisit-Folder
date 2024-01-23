@@ -5,6 +5,32 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+
+      /* Arabic Font */
+      @font-face {
+          font-family: 'Blanka Arabic Regular';
+          font-weight: 400;
+          src: url('https://rewards.visitsaudi.com/app/font/BlankaArabic-Regular.ttf')
+      }
+
+      /* English Font */
+      @font-face {
+          font-family: 'Wicklow Medium';
+          src: url('https://rewards.visitsaudi.com/app/font/Wicklow-Medium.ttf')
+      }
+
+      .arabic_header {
+          font-family: 'Blanka Arabic Regular', 'Times New Roman', Times, serif!important;
+      }
+
+      .english_header {
+          font-family: 'Wickalow Medium', 'Times New Roman', Times, serif!important;
+      }
+
+      .responsive-table {
+        font-family: 'Blanka Arabic Regular', Arial, Helvetica, sans-serif!important;
+      }
+
       @media only screen and (max-width: 600px) {
         ul {
           list-style-type: none;
@@ -48,6 +74,27 @@
     </style>
   </head>
   <body>
+    <!-- Email preheader -->
+    <div
+      style="
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        mso-hide: all;
+        font-size: 1px;
+        line-height: 1px;
+        opacity: 0;
+        color: transparent;
+        visibility: hidden;
+        width: 0;
+      "
+    >
+      Learn about exclusive benefits for Gold Rewards members like you 😎 |
+      <span dir="rtl" lang="ar">
+        تعرف على المزايا الحصرية المخصصة لأعضاء "الفئة الذهبية" مثلك😎
+      </span>
+    </div>
+
     <table
       class="responsive-table"
       width="600px"
@@ -166,6 +213,7 @@
           <br /><br />
 
           <span
+          class="english_header"
             style="
               font-weight: bold;
               color: #b49168;
@@ -175,20 +223,12 @@
             >You’re officially a Saudi Rewards Gold member.
           </span>
           <br /><br />
-          As a Saudi Rewards member, you’ve already been enjoying exciting
-          benefits like money-can’t-buy experiences, offers and exclusives with
-          tourism, travel and lifestyle partners. But there’s so much more to
-          Saudi Rewards at every tier, and you just gained access to the next
-          level.
+          As a Saudi Rewards member, you’ve already been enjoying exciting benefits such as “money can’t buy” experiences and offers and exclusives with tourism, travel and lifestyle partners. But there’s so much more to Saudi Rewards at every tier, and you just gained access to the next level. 
           <br />
           <br />
-          Starting today for one whole year, you’ll earn 1.5 Saudi Points for
-          every SAR1 spent, and your points remain valid for 2 years.
+          Starting today for one whole year, you’ll earn 1.5 Saudi Points for every SAR1 spent, and your new earned  points remain valid for two years.
           <br /><br />
-          And as always, when you go more, you’ll get more. The more you spend
-          with eligible tourism partners, curated experiences offered by our
-          partners, or Saudi City Passes, the more points you earn, and the
-          faster you become eligible for higher tiers.
+        And as always, when you go more, you’ll get more. The more you spend with eligible tourism partners, on curated experiences offered by our partners, or on City Passes, the more points you earn, and the faster you become eligible for a higher tier.
           <br />
           <br />
           So don't stop now, as Platinum is within reach and waiting for you.
@@ -233,9 +273,10 @@
             </tr>
           </table>
           <br />
-          Congratulations (First Name)!
+ألف مبروك (الاسم الأول)! 
           <br /><br />
           <span
+          class="arabic_header"
             style="
               font-weight: bold;
               color: #b49168;
