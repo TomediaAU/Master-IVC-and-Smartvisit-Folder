@@ -5,30 +5,33 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-
       /* Arabic Font */
       @font-face {
-          font-family: 'Blanka Arabic Regular';
-          font-weight: 400;
-          src: url('https://rewards.visitsaudi.com/app/font/BlankaArabic-Regular.ttf')
+        font-family: "Blanka Arabic Regular";
+        font-weight: 400;
+        src: url("https://rewards.visitsaudi.com/app/font/BlankaArabic-Regular.ttf");
       }
 
       /* English Font */
       @font-face {
-          font-family: 'Wicklow Medium';
-          src: url('https://rewards.visitsaudi.com/app/font/Wicklow-Medium.ttf')
+        font-family: "Wicklow Medium";
+        src: url("https://rewards.visitsaudi.com/app/font/Wicklow-Medium.ttf");
       }
 
       .arabic_header {
-          font-family: 'Blanka Arabic Regular', 'Times New Roman', Times, serif!important;
+        font-family: "Blanka Arabic Regular", "Times New Roman", Times, serif !important;
       }
 
       .english_header {
-          font-family: 'Wickalow Medium', 'Times New Roman', Times, serif!important;
+        font-family: "Wickalow Medium", "Times New Roman", Times, serif !important;
       }
 
       .responsive-table {
-        font-family: 'Blanka Arabic Regular', Arial, Helvetica, sans-serif!important;
+        font-family: "Blanka Arabic Regular", Arial, Helvetica, sans-serif !important;
+      }
+
+      .hide-desktop {
+        display: none;
       }
 
       @media only screen and (max-width: 600px) {
@@ -70,11 +73,14 @@
         .hide-mobile {
           display: none !important;
         }
+
+        .hide-mobile {
+          display: none !important;
+        }
       }
     </style>
   </head>
   <body>
-
     <!-- Email preheader -->
     <div
       style="
@@ -92,154 +98,185 @@
     >
       Learn about exclusive benefits for Platinum Rewards members like you 😎 |
       <span dir="rtl" lang="ar">
-       تعرف على المزايا الحصرية لأعضاء "الفئة البلاتينية" الفخمين مثلك😎
+        تعرف على المزايا الحصرية لأعضاء "الفئة البلاتينية" الفخمين مثلك😎
       </span>
     </div>
-
-    <table
-      class="responsive-table"
-      width="600"
-      style="
-        padding: 0;
-        margin: auto;
-        border-spacing: 0;
-width: 600px;
-        background-repeat: no-repeat;
-        background-position: center top;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.5;
-      "
-    >
-      <tr>
-        <td
-          width="200"
-          style="padding-top: 10px; padding-bottom: 10px; width: 200px;"
-          colspan="2"
-        >
-          <img src="img/3x/englihslogoblue.png" width="150" style="width: 150px;" alt="" />
-        </td>
-        <td
-          width="200"
-          style="
-            padding: 0;
-            padding-bottom: 20px;
-            vertical-align: bottom;
-            text-align: center;
-            width: 200px;
-          "
-          colspan="2"
-        ></td>
-        <td
-          width="200"
-          style="padding-top: 10px; padding-bottom: 10px; text-align: right; width: 200px;"
-          colspan="2"
-        >
-          <img src="img/3x/arabiclogoblue.png" width="150" style="width: 150px;" alt="" />
-        </td>
-      </tr>
-      <tr
+    <center>
+      <table
+        class="responsive-table"
+        width="600"
+        align="center"
         style="
-          background-image: url('img/600w/platinumbanner.png');
-          background-size: 600px auto;
+          padding: 0;
+          margin: auto;
+          border-spacing: 0;
+          width: 600px;
           background-repeat: no-repeat;
           background-position: center top;
-          height: 250px;
-          vertical-align: bottom;
+          font-family: Arial, Helvetica, sans-serif;
+          line-height: 1.5;
         "
       >
-        <td
-          colspan="3"
-          width="300"
-          style="color: #fff; padding: 20px; padding-bottom: 30px; width: 300px;"
-        >
-          <a
-            class="hide-mobile"
-            href=""
+        <tr>
+          <td
+            width="200"
+            style="padding-top: 10px; padding-bottom: 10px; width: 200px"
+            colspan="2"
+          >
+            <img
+              src="img/3x/englihslogoblue.png"
+              width="150"
+              style="width: 150px"
+              alt=""
+            />
+          </td>
+          <td
+            width="200"
             style="
-              background-color: #777d83;
-              padding: 10px;
-              border-radius: 20px;
-              color: #fff;
-              border: #fff 1px solid;
-              font-weight: bold;
-              text-decoration: none;
+              padding: 0;
+              padding-bottom: 20px;
+              vertical-align: bottom;
+              text-align: center;
+              width: 200px;
+            "
+            colspan="2"
+          ></td>
+          <td
+            width="200"
+            style="
+              padding-top: 10px;
+              padding-bottom: 10px;
+              text-align: right;
+              width: 200px;
+            "
+            colspan="2"
+          >
+            <img
+              src="img/3x/arabiclogoblue.png"
+              width="150"
+              style="width: 150px"
+              alt=""
+            />
+          </td>
+        </tr>
+      </table>
+
+      <table
+        class="responsive-table"
+        width="600"
+        align="center"
+        style="
+          padding: 0;
+          margin: auto;
+          border-spacing: 0;
+          width: 600px;
+          background-repeat: no-repeat;
+          background-position: center top;
+          font-family: Arial, Helvetica, sans-serif;
+          line-height: 1.5;
+        "
+      >
+        <tr>
+          <td colspan="6" class="hide-mobile">
+            <a href="">
+              <img src="img/600w/PlatinumBG.png" alt="" />
+            </a>
+          </td>
+        </tr>
+
+        <!--[if !mso]><!-->
+        <tr
+          style="
+            background-image: url('img/600w/platinumbanner.png');
+            background-size: 600px auto;
+            background-repeat: no-repeat;
+            background-position: center top;
+            height: 250px;
+            vertical-align: bottom;
+          "
+          class="hide-desktop"
+        >
+          <td colspan="6"></td>
+        </tr>
+        <!--<![endif]-->
+      </table>
+
+      <table
+        class="responsive-table"
+        width="600"
+        align="center"
+        style="
+          padding: 0;
+          margin: auto;
+          border-spacing: 0;
+          width: 600px;
+          background-repeat: no-repeat;
+          background-position: center top;
+          font-family: Arial, Helvetica, sans-serif;
+          line-height: 1.5;
+        "
+      >
+        <tr style="vertical-align: top">
+          <td
+            colspan="3"
+            width="300"
+            style="
+              color: #393939;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              width: 300px;
             "
           >
-            Download card
-          </a>
-        </td>
-        <td
-          colspan="3"
-          width="300"
-          dir="rtl"
-          lang="ar"
-          style="color: #fff; padding: 20px; padding-bottom: 30px; width: 300px;"
-        >
-          <a
-            href=""
-            class="hide-mobile"
-            style="
-              background-color: #777d83;
-              padding: 10px;
-              border-radius: 20px;
-              color: #fff;
-              font-weight: bold;
-              text-decoration: none;
-              border: #fff 1px solid;
-            "
-          >
-            حمّل البطاقة
-          </a>
-        </td>
-      </tr>
-      <tr style="vertical-align: top">
-        <td
-          colspan="3"
-          width="300"
-          style="color: #393939; padding-top: 20px; padding-bottom: 20px; width: 300px;"
-        >
-          <table width="300" style="width: 300px;">
-            <tr>
-              <td valign="middle">
-                <img height="20px" src="img/3x/arrowplatinumright.png" />
-              </td>
-              <td valign="middle" style="color: #000; padding-left: 5px">
-                MEMBER ID: 123456789 <br />
-                TIER: GOLD
-              </td>
-            </tr>
-          </table>
-          <br />
+            <table width="300" style="width: 300px">
+              <tr>
+                <td valign="middle">
+                  <img height="20px" src="img/3x/arrowplatinumright.png" />
+                </td>
+                <td valign="middle" style="color: #000; padding-left: 5px">
+                  MEMBER ID: 123456789 <br />
+                  TIER: PLATINUM
+                </td>
+              </tr>
+            </table>
+            <br />
 
-          Congratulations (First Name)!
-          <br /><br />
+            Congratulations (First Name)!
+            <br /><br />
 
-          <span
-            class="english_header"
-            style="
-              font-weight: bold;
-              color: #777d83;
-              font-family: 'Times New Roman', Times, serif;
-              font-size: 30px;
-            "
-            >You’re officially a Saudi Rewards Platinum member.
-          </span>
-          <br /><br />
-          As a Saudi Rewards member, you’ve already been enjoying exciting benefits such as “money can’t buy” experiences and offers and exclusives with tourism, travel and lifestyle partners. But there’s so much more to Saudi Rewards at every tier, and you just gained access to the next level. 
-          <br />
-          <br />
-          Starting today for one whole year, you’ll earn 2 Saudi Points for every SAR1 spent, and your new earned points remain valid for 30 months.
-          <br /><br />
-        And as always, when you go more, you’ll get more. The more you spend with Saudi Rewards partners, the more points you earn, and the faster you become eligible for higher tiers.
-          <br />
-          <br />
-         Don't stop now. The Black tier is closer than you think.
-          <br />
-          <br />
-          View special offers for Platinum tier Saudi Rewards members.
-          <br /><br />
+            <span
+              class="english_header"
+              style="
+                font-weight: bold;
+                color: #777d83;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 30px;
+              "
+              >You’re officially a Saudi Rewards Platinum member.
+            </span>
+            <br /><br />
+            As a Saudi Rewards member, you’ve already been enjoying exciting
+            benefits such as “money can’t buy” experiences and offers and
+            exclusives with tourism, travel and lifestyle partners. But there’s
+            so much more to Saudi Rewards at every tier, and you just gained
+            access to the next level.
+            <br />
+            <br />
+            Starting today for one whole year, you’ll earn 2 Saudi Points for
+            every SAR1 spent, and your new earned points remain valid for 30
+            months.
+            <br /><br />
+            And as always, when you go more, you’ll get more. The more you spend
+            with Saudi Rewards partners, the more points you earn, and the
+            faster you become eligible for higher tiers.
+            <br />
+            <br />
+            Don't stop now. The Black tier is closer than you think.
+            <br />
+            <br />
+            View special offers for Platinum tier Saudi Rewards members.
+            <br /><br />
 
-          <a
+            <!-- <a
             href=""
             style="
               background-color: #777d83;
@@ -251,60 +288,77 @@ width: 600px;
             "
           >
             View Offers
-          </a>
-          <br />
-          <br />
-        </td>
-        <td
-          colspan="3"
-          width="300"
-          dir="rtl"
-          lang="ar"
-          style="color: #393939; padding-top: 20px; padding-bottom: 20px; width: 300px;"
-        >
-          <table width="300" style="width: 300px;">
-            <tr>
-              <td valign="middle">
-                <img height="20px" src="img/3x/arrowplatinumleft.png" />
-              </td>
-              <td valign="middle" style="color: #000; padding-left: 5px">
-معرّف العضوية: 12345678
-                <br />
-الفئة: البلاتينية 
-              </td>
-            </tr>
-          </table>
-          <br />
-ألف مبروك (الاسم الأول)! 
-          <br /><br />
-          <span
-class="arabic_header"
-            style="
-              font-weight: bold;
-              color: #777d83;
-              font-family: 'Times New Roman', Times, serif;
-              font-size: 30px;
-            "
-            >
-أنت الآن رسميًا عضو في الفئة البلاتينية.
-            </span
-          >
-          <br /><br /><br><br>
-       بما انك الآن عضو في برنامج مكافآت السعودية، فمعناته جربت واستمتعت بمزايا حماسية من شركاء الفعاليات السياحية أو السـفر أو لايف ستايل. ولكن تزيد العروض والمزايا في برنامجنا كل ما ترقيت لفئة أعلى، ونبشرك ترقيت الآن للفئة البلاتينية.
-          <br /><br />
-   
-ابتداءً من اليوم ولمدة سنة كاملة راح تكسب نقطتين سعودية مقابل كل ريال سعودي تدفعه والنقاط الجديدة اللي راح تكسبها خلال عضويتك في الفئة البلاتينية راح تظل صالحة تستفيد منها لمدة ثلاثين شهر.
-          <br /><br />
-          
-ومثل ما عودناك كل ما ابحرت أكثر راح تحصل على مكافآت أكثر، كل ما دفعت أكثر على التجارب اللي اخترتها من شركاء الفعاليات السياحية أو بطاقة المدن السياحية زادت نقاطك المكتسبة وهذا يسرع من فرصة ترقيتك لفئة عضوية أعلى من الفئة الحالية.
-          <br /><br />
-    هذا كله عشان نشجعك ما توقف الآن! لأن ما بقالك شي وتوصل لفئة البلاك.
-          <br />
-          <br />
-          شاهد العروض الخاصة لأعضاء الفئة البلاتينية.
-          <br><br><br><br><br>
+          </a> -->
 
-          <a
+            <a href="" style="">
+              <img src="img/40h/SilverButtonEnglish.png" alt="button" />
+            </a>
+
+            <br />
+            <br />
+          </td>
+          <td
+            colspan="3"
+            width="300"
+            dir="rtl"
+            lang="ar"
+            style="
+              color: #393939;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              width: 300px;
+            "
+          >
+            <table width="300" style="width: 300px">
+              <tr>
+                <td valign="middle">
+                  <img height="20px" src="img/3x/arrowplatinumleft.png" />
+                </td>
+                <td valign="middle" style="color: #000; padding-left: 5px">
+                  معرّف العضوية: 12345678
+                  <br />
+                  الفئة: البلاتينية
+                </td>
+              </tr>
+            </table>
+            <br />
+            ألف مبروك (الاسم الأول)!
+            <br /><br />
+            <span
+              class="arabic_header"
+              style="
+                font-weight: bold;
+                color: #777d83;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 30px;
+              "
+            >
+              أنت الآن رسميًا عضو في الفئة البلاتينية.
+            </span>
+            <br /><br /><br /><br />
+            بما انك الآن عضو في برنامج مكافآت السعودية، فمعناته جربت واستمتعت
+            بمزايا حماسية من شركاء الفعاليات السياحية أو السـفر أو لايف ستايل.
+            ولكن تزيد العروض والمزايا في برنامجنا كل ما ترقيت لفئة أعلى، ونبشرك
+            ترقيت الآن للفئة البلاتينية.
+            <br /><br />
+
+            ابتداءً من اليوم ولمدة سنة كاملة راح تكسب نقطتين سعودية مقابل كل
+            ريال سعودي تدفعه والنقاط الجديدة اللي راح تكسبها خلال عضويتك في
+            الفئة البلاتينية راح تظل صالحة تستفيد منها لمدة ثلاثين شهر.
+            <br /><br />
+
+            ومثل ما عودناك كل ما ابحرت أكثر راح تحصل على مكافآت أكثر، كل ما دفعت
+            أكثر على التجارب اللي اخترتها من شركاء الفعاليات السياحية أو بطاقة
+            المدن السياحية زادت نقاطك المكتسبة وهذا يسرع من فرصة ترقيتك لفئة
+            عضوية أعلى من الفئة الحالية.
+            <br /><br />
+            هذا كله عشان نشجعك ما توقف الآن! لأن ما بقالك شي وتوصل لفئة البلاك.
+            <br />
+            <br />
+            شاهد العروض الخاصة لأعضاء الفئة البلاتينية.
+            <br /><br /><br /><br /><br />
+
+            <!-- <a
             href=""
             style="
               background-color: #777d83;
@@ -316,110 +370,112 @@ class="arabic_header"
             "
           >
 شاهد العروض
-          </a>
+          </a> -->
 
-          <br />
-          <br />
-        </td>
-      </tr>
+            <a href="" style="">
+              <img src="img/40h/SilverButtonArabic.png" alt="button" />
+            </a>
 
-      <tr>
-        <td style="padding: 10px"></td>
-      </tr>
+            <br />
+            <br />
+          </td>
+        </tr>
 
-      <tr
-        style="
-          background-color: #777d83;
-          color: #fff;
-          text-align: center;
-          font-weight: bold;
-        "
-      >
-        <td colspan="6" width="600" style="width: 600px;">
-          <br />
-          <a href="https://facebook.com/SaudiRewards" style="color: #fff; text-decoration: none"
-            ><img
-              height="20px"
-              style="padding-right: 20px"
-              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/fb@3x.png"
-              alt=""
-          /></a>
-          <a href="https://www.instagram.com/saudirewards" style="color: #fff; text-decoration: none"
-            ><img
-              height="20px"
-              style="padding-right: 20px"
-              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/insta@3x.png"
-              alt=""
-          /></a>
-          <a href="https://twitter.com/SaudiRewards" style="color: #fff; text-decoration: none"
-            ><img
-              height="20px"
-              style="padding-right: 20px"
-              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/x@3x.png"
-              alt=""
-          /></a>
-          <a href="https://www.youtube.com/@SaudiRewards" style="color: #fff; text-decoration: none"
-            ><img
-              height="20px"
-              style="padding-right: 20px"
-              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/youtube@3x.png"
-              alt=""
-          /></a>
-          <a href="https://www.snapchat.com/add/saudirewards" style="color: #fff; text-decoration: none"
-            ><img
-              height="20px"
-              style="padding-right: 20px"
-              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/snap@3x.png"
-              alt=""
-          /></a>
-          <a href="https://tiktok.com/@saudirewards" style="color: #fff; text-decoration: none"
-            ><img
-              height="20px"
-              style="padding-right: 0"
-              src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/tiktok@3x.png"
-              alt=""
-          /></a>
-          <br />
-          <br />
-          <hr />
-          <br />
+        <tr>
+          <td style="padding: 10px"></td>
+        </tr>
 
-          <a
-            href="https://www.visitsaudi.com/en/keep-in-touch-with-us/privacy-policy"
-            style="
-              color: #fff;
-              padding-right: 20px;
-              text-decoration: none;
-              font-weight: 300;
-            "
-            >Terms and Conditions</a
-          >
-          <a
-            href="https://ssid.visitsaudi.com/"
-            style="
-              color: #fff;
-              padding-right: 20px;
-              text-decoration: none;
-              font-weight: 300;
-            "
-            >Unsubscribe</a
-          >
-          <a
-            href="https://www.visitsaudi.com/en/keep-in-touch-with-us/privacy-policy"
-            style="
-              color: #fff;
-              padding-right: 20px;
-              text-decoration: none;
-              font-weight: 300;
-            "
-            >Privacy Policy</a
-          >
-          <br />
-          <br />
-        </td>
-      </tr>
-    </table>
+        <tr
+          style="
+            background-color: #777d83;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+          "
+        >
+          <td colspan="6" width="600" style="width: 600px">
+            <br />
+            <a
+              href="https://facebook.com/SaudiRewards"
+              style="color: #fff; text-decoration: none"
+              ><img
+                height="20px"
+                src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/fb@3x.png"
+                alt=""
+            /></a>
+            &emsp;
+            <a
+              href="https://www.instagram.com/saudirewards"
+              style="color: #fff; text-decoration: none"
+              ><img
+                height="20px"
+                src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/insta@3x.png"
+                alt=""
+            /></a>
+            &emsp;
+            <a
+              href="https://twitter.com/SaudiRewards"
+              style="color: #fff; text-decoration: none"
+              ><img
+                height="20px"
+                src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/x@3x.png"
+                alt=""
+            /></a>
+            &emsp;
+            <a
+              href="https://www.youtube.com/@SaudiRewards"
+              style="color: #fff; text-decoration: none"
+              ><img
+                height="20px"
+                src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/youtube@3x.png"
+                alt=""
+            /></a>
+            &emsp;
+            <a
+              href="https://www.snapchat.com/add/saudirewards"
+              style="color: #fff; text-decoration: none"
+              ><img
+                height="20px"
+                src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/snap@3x.png"
+                alt=""
+            /></a>
+            &emsp;
+            <a
+              href="https://tiktok.com/@saudirewards"
+              style="color: #fff; text-decoration: none"
+              ><img
+                height="20px"
+                src="https://loyaltyimages.svs.com.au/card/goloyalty/email/silver/tiktok@3x.png"
+                alt=""
+            /></a>
+            <br />
+            <br />
+            <hr />
+            <br />
 
+            <a
+              href="https://www.visitsaudi.com/en/keep-in-touch-with-us/privacy-policy"
+              style="color: #fff; text-decoration: none; font-weight: 300"
+              >Terms and Conditions</a
+            >
+            &emsp;
+            <a
+              href="https://ssid.visitsaudi.com/"
+              style="color: #fff; text-decoration: none; font-weight: 300"
+              >Unsubscribe</a
+            >
+            &emsp;
+            <a
+              href="https://www.visitsaudi.com/en/keep-in-touch-with-us/privacy-policy"
+              style="color: #fff; text-decoration: none; font-weight: 300"
+              >Privacy Policy</a
+            >
+            <br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </center>
     <!-- Mobile -->
   </body>
 </html>
