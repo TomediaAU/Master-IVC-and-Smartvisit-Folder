@@ -1,0 +1,142 @@
+/* screen - jazzy-pass-benefit-mobile */
+
+.jazzy-pass-benefit-mobile {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1193px;
+  width: 375px;
+}
+
+.jazzy-pass-benefit-mobile .overlap-group {
+  height: 299px;
+  position: relative;
+  width: 375px;
+}
+
+.jazzy-pass-benefit-mobile .image {
+  height: 216px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 375px;
+}
+
+.jazzy-pass-benefit-mobile .header {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  height: 76px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 32px;
+  width: 375px;
+}
+
+.jazzy-pass-benefit-mobile .powered-by-smartvisi {
+  height: 60.5px;
+  margin-left: 1px;
+  margin-top: 10.5px;
+  object-fit: cover;
+  width: 170px;
+}
+
+.jazzy-pass-benefit-mobile .good-times-pass {
+  height: 183px;
+  left: 25px;
+  object-fit: cover;
+  position: absolute;
+  top: 116px;
+  width: 326px;
+}
+
+.jazzy-pass-benefit-mobile .activity-name-pass {
+  align-items: center;
+  background: linear-gradient(180deg, rgb(54, 67, 102) 0%, rgb(87, 71, 153) 100%);
+  border-radius: 8px;
+  display: flex;
+  height: 47px;
+  justify-content: center;
+  left: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 252px;
+  width: 345px;
+}
+
+.jazzy-pass-benefit-mobile .jazzy-pass {
+  color: var(--white);
+  font-family: var(--font-family-dm_sans);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  height: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  width: 77px;
+}
+
+.jazzy-pass-benefit-mobile .body {
+  display: flex;
+  flex-direction: column;
+  height: 708px;
+  margin-top: 41px;
+  width: 345px;
+}
+
+.jazzy-pass-benefit-mobile .hi-first-name {
+  color: var(--darkblack);
+  font-family: var(--font-family-dm_sans);
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  height: 25px;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-left: 26px;
+  width: 307px;
+}
+
+.jazzy-pass-benefit-mobile .youre-on-your-way-t {
+  color: var(--darkdark-900);
+  font-family: var(--font-family-dm_sans);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  height: 44px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 26px;
+  margin-top: 8px;
+  width: 307px;
+}
+
+.jazzy-pass-benefit-mobile .text-container-eng {
+  align-self: center;
+  height: 599px;
+  margin-top: 32px;
+  width: 345px;
+}
+
+.jazzy-pass-benefit-mobile .footer {
+  align-items: center;
+  background-color: #1f395e;
+  display: flex;
+  flex-shrink: 1;
+  height: 92px;
+  justify-content: center;
+  margin-top: 53px;
+  width: 375px;
+}
+
+.jazzy-pass-benefit-mobile .for-any-customer-ser {
+  color: transparent;
+  font-family: var(--font-family-dm_sans);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: 40px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  width: 329px;
+}

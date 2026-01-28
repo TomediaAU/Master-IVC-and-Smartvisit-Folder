@@ -1,0 +1,137 @@
+/* screen - jazzy-pass-benefit */
+
+.jazzy-pass-benefit {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 925px;
+  width: 1000px;
+}
+
+.jazzy-pass-benefit .overlap-group {
+  height: 327px;
+  position: relative;
+  width: 1000px;
+}
+
+.jazzy-pass-benefit .header {
+  align-items: center;
+  background-color: transparent;
+  background-image: url(../img/bg.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: auto;
+  justify-content: flex-start;
+  left: 0;
+  min-height: 327px;
+  padding: 13px 0;
+  position: absolute;
+  top: 0;
+  width: 1000px;
+}
+
+.jazzy-pass-benefit .powered-by-smartvisi {
+  height: 48px;
+  margin-right: 1.0px;
+  object-fit: cover;
+  width: 135px;
+}
+
+.jazzy-pass-benefit .good-times-pass {
+  height: 236px;
+  object-fit: cover;
+  width: 420px;
+}
+
+.jazzy-pass-benefit .activity-name-pass {
+  align-items: center;
+  background: linear-gradient(180deg, rgb(54, 67, 102) 0%, rgb(87, 71, 153) 100%);
+  border-radius: 8px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  left: 276px;
+  overflow: hidden;
+  position: absolute;
+  top: 252px;
+  width: 448px;
+}
+
+.jazzy-pass-benefit .jazzy-pass {
+  color: var(--white);
+  font-family: var(--font-family-dm_sans);
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  height: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 1px;
+  width: 87px;
+}
+
+.jazzy-pass-benefit .body {
+  display: flex;
+  flex-direction: column;
+  height: 453px;
+  margin-top: 13px;
+  width: 912px;
+}
+
+.jazzy-pass-benefit .hi-first-name {
+  color: var(--darkblack);
+  font-family: var(--font-family-dm_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  height: 25px;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-left: 16px;
+  width: 593px;
+}
+
+.jazzy-pass-benefit .youre-on-your-way-t {
+  color: var(--darkdark-900);
+  font-family: var(--font-family-dm_sans);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  height: 26px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 16px;
+  margin-top: 8px;
+  width: 593px;
+}
+
+.jazzy-pass-benefit .text-container-eng {
+  align-self: center;
+  height: 364px;
+  margin-left: -3px;
+  margin-top: 30px;
+  width: 909px;
+}
+
+.jazzy-pass-benefit .footer {
+  align-items: center;
+  background-color: #1f395e;
+  display: flex;
+  flex-shrink: 1;
+  height: 68px;
+  justify-content: center;
+  margin-top: 64px;
+  width: 1000px;
+}
+
+.jazzy-pass-benefit .for-any-customer-ser {
+  color: transparent;
+  font-family: var(--font-family-dm_sans);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  height: 20px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+  width: 652px;
+}

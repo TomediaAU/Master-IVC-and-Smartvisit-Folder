@@ -1,0 +1,11 @@
+:root { 
+  --darkblack: #000000;
+  --darkdark-900: #393939;
+  --white: #ffffff;
+ 
+  --font-size-l: 17px;
+  --font-size-m: 15px;
+  --font-size-xl: 20px;
+ 
+  --font-family-dm_sans: "DM Sans", Helvetica;
+}
